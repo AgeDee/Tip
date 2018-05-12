@@ -22,11 +22,11 @@
             <Font size="19.0" />
          </font>
       </Text>
-      <Button layoutX="473.0" layoutY="23.0" mnemonicParsing="false" text="Wyloguj" />
-      <Button layoutX="14.0" layoutY="577.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" text="Szukaj kontaktów" />
-      <Button layoutX="204.0" layoutY="577.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" text="Usuń zaznaczonego" />
+      <Button fx:id="logoutButton" layoutX="473.0" layoutY="23.0" mnemonicParsing="false" onAction="#logoutAction" text="Wyloguj" />
+      <Button fx:id="searchButton" layoutX="14.0" layoutY="577.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="25.0" prefWidth="153.0" text="Szukaj kontaktów" />
+      <Button fx:id="deleteButton" layoutX="204.0" layoutY="577.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="25.0" prefWidth="153.0" text="Usuń zaznaczonego" />
       <Button layoutX="387.0" layoutY="577.0" mnemonicParsing="false" text="Zablokuj zaznaczonego" />
-      <Button layoutX="357.0" layoutY="476.0" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="Połącz" />
+      <Button fx:id="connectButton" layoutX="357.0" layoutY="476.0" mnemonicParsing="false" onAction="#connectAction" style="-fx-background-color: lightgreen;" text="Połącz" />
       <Text layoutX="375.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybrano:">
          <font>
             <Font size="19.0" />
@@ -37,10 +37,10 @@
             <Font size="19.0" />
          </font>
       </Text>
-      <Button layoutX="424.0" layoutY="476.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Blokuj" />
+      <Button fx:id="blockButton" layoutX="424.0" layoutY="476.0" mnemonicParsing="false" onAction="#blockAction" style="-fx-background-color: red;" text="Blokuj" />
       <WebView fx:id="avatarView" layoutX="339.0" layoutY="145.0" prefHeight="150.0" prefWidth="150.0" />
-      <Button layoutX="33.0" layoutY="111.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="213.0" text="Zablokowani użytkownicy" />
-      <Button layoutX="33.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="213.0" text="Ustawienia" />
-      <Button layoutX="33.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="213.0" text="Historia połączeń" />
+      <Button fx:id="blockedButton" layoutX="33.0" layoutY="111.0" mnemonicParsing="false" onAction="#blockedAction" prefHeight="25.0" prefWidth="213.0" text="Zablokowani użytkownicy" />
+      <Button fx:id="settingsButton" layoutX="33.0" layoutY="154.0" mnemonicParsing="false" onAction="#settingsAction" prefHeight="25.0" prefWidth="213.0" text="Ustawienia" />
+      <Button fx:id="logButton" layoutX="33.0" layoutY="69.0" mnemonicParsing="false" onAction="#logAction" prefHeight="25.0" prefWidth="213.0" text="Historia połączeń" />
    </children>
 </AnchorPane>
