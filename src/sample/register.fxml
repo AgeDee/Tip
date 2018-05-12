@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="298.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.registerController">
+   <children>
+      <TextField layoutX="162.0" layoutY="104.0" prefHeight="25.0" prefWidth="177.0" />
+      <Label layoutX="55.0" layoutY="108.0" text="Login:" />
+      <Label layoutX="55.0" layoutY="143.0" text="Hasło:" />
+      <Label layoutX="55.0" layoutY="177.0" text="Powtórz hasło:" />
+      <Text layoutX="65.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rejestracja użytkownika">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Button layoutX="170.0" layoutY="245.0" mnemonicParsing="false" text="Zarejestruj" />
+      <CheckBox layoutX="171.0" layoutY="211.0" mnemonicParsing="false" text="Akceptuję" />
+      <Label layoutX="55.0" layoutY="69.0" text="Podaj swoje dane:" />
+      <PasswordField layoutX="162.0" layoutY="139.0" prefHeight="25.0" prefWidth="177.0" />
+      <PasswordField layoutX="162.0" layoutY="173.0" prefHeight="25.0" prefWidth="177.0" />
+      <Hyperlink layoutX="245.0" layoutY="208.0" text="regulamin" />
+   </children>
+</AnchorPane>
