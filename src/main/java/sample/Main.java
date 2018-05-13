@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("settings.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
         primaryStage.setTitle("Komunikator");
         Scene scene = new Scene(root);
         scene.getStylesheets().add("sample/style.css");
@@ -20,7 +20,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-
+        CurrentUser.setUserId("userId");
         launch(args);
     }
 }

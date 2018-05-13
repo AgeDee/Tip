@@ -10,14 +10,14 @@
 
 <AnchorPane prefHeight="616.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainController">
    <children>
-      <ListView fx:id="contactsList" layoutX="14.0" layoutY="227.0" prefHeight="338.0" prefWidth="250.0" />
+      <ListView fx:id="contactsList" layoutX="14.0" layoutY="227.0" onMouseClicked="#contactListAction" prefHeight="338.0" prefWidth="250.0" />
       <Label layoutX="14.0" layoutY="203.0" text="Kontakty:" />
       <Text layoutX="62.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zalogowano jako: ">
          <font>
             <Font size="19.0" />
          </font>
       </Text>
-      <Text layoutX="229.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gall Anonim">
+      <Text fx:id="userText" layoutX="229.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gall Anonim">
          <font>
             <Font size="19.0" />
          </font>
@@ -32,7 +32,7 @@
             <Font size="19.0" />
          </font>
       </Text>
-      <Text layoutX="388.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Testov">
+      <Text fx:id="selectedText" layoutX="388.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Testov">
          <font>
             <Font size="19.0" />
          </font>

@@ -1,7 +1,5 @@
 package sample;
 
-import com.cloudinary.Cloudinary;
-import com.cloudinary.utils.ObjectUtils;
 import javafx.fxml.FXML;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
@@ -9,8 +7,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.Map;
 
 public class settingsController {
 
@@ -18,29 +14,33 @@ public class settingsController {
     WebView avatarView;
 
 
+    String userId = CurrentUser.getUserId();
+
     @FXML
-    void initialize(){
-        WebEngine webEngine = avatarView.getEngine();
-        String avatarContent = "<img hight=133 width=133 src=\"https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png\"></img> ";
-        webEngine.loadContent(avatarContent);
+    void initialize() {
+        setAvatar(AvatarManager.downloadAvatar(userId));
+
     }
 
     @FXML
-    void selectAvatarAction() throws IOException {
+    void selectAvatarAction() throws Exception {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Wczytaj avatar...");
-        FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Zdjęcie (*.jpg)", "*.jpg");
+        FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Zdjęcie (*.jpg;*.png)", "*.jpg;*png");
         fileChooser.getExtensionFilters().add(filter);
         File file = fileChooser.showOpenDialog(new Stage());
 
-        Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
-                "cloud_name", "my_cloud_name",
-                "api_key", "my_api_key",
-                "api_secret", "my_api_secret"));
-
-        Map uploadResult = cloudinary.uploader().upload(file, ObjectUtils.emptyMap());
-
-        System.out.println(uploadResult.toString());
+        if(file != null) {
+            AvatarManager.uploadAvatar(file, userId);
+            setAvatar(AvatarManager.downloadAvatar(userId));
+        }else {
+            System.out.println("Nie wczytano pliku");
+        }
     }
 
+    void setAvatar(String url){
+        WebEngine webEngine = avatarView.getEngine();
+        String avatarContent = "<img style=\"width: 133;height: 133px;\" src=\" " + url + " \"></img> ";
+        webEngine.loadContent(avatarContent);
+    }
 }
