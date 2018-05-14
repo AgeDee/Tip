@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.searchController">
+   <children>
+      <Text layoutX="21.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wyszukiwanie użytkownika">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchText" layoutX="21.0" layoutY="82.0" prefHeight="25.0" prefWidth="273.0" text="Test" />
+      <Button fx:id="searchButton" layoutX="309.0" layoutY="82.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="25.0" prefWidth="121.0" text="Szukaj!" />
+      <ListView fx:id="resultList" layoutX="21.0" layoutY="125.0" prefHeight="249.0" prefWidth="273.0" />
+      <Button fx:id="addSelectedButton" layoutX="309.0" layoutY="125.0" mnemonicParsing="false" onAction="#addSelectedAction" prefHeight="25.0" prefWidth="121.0" text="Dodaj wybrany" />
+      <Button fx:id="cancelButton" layoutX="309.0" layoutY="165.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="25.0" prefWidth="121.0" text="Anuluj" />
+   </children>
+</AnchorPane>
