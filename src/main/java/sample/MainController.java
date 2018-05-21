@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class mainController {
+public class MainController {
 
     @FXML
     ListView<String> contactsList;
@@ -68,8 +68,19 @@ public class mainController {
     }
 
     @FXML
-    void logoutAction(){
+    void logoutAction() throws IOException {
         System.out.println("Wyloguj");
+
+        Stage stage = (Stage) userText.getScene().getWindow();
+        stage.close();
+
+        CurrentUser.setUserId("");
+
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("sample/style.css");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -83,16 +94,30 @@ public class mainController {
     }
 
     @FXML
-    void logAction(){
+    void logAction() throws IOException {
         System.out.println("Historia");
+
+        Parent root = FXMLLoader.load(getClass().getResource("log.fxml"));
+        Stage stage = new Stage();
+        stage.setTitle("Historia");
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("sample/style.css");
+        stage.setScene(scene);
+
+        stage.show();
+
     }
 
     @FXML
     void settingsAction() throws IOException {
+        System.out.println("Ustawienia");
+
         Parent root = FXMLLoader.load(getClass().getResource("settings.fxml"));
         Stage stage = new Stage();
         stage.setTitle("Ustawienia");
-        stage.setScene(new Scene(root));
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("sample/style.css");
+        stage.setScene(scene);
 
         stage.setOnCloseRequest(event -> {
             System.out.println("Wczytywanie avatara.");
@@ -105,8 +130,22 @@ public class mainController {
     }
 
     @FXML
-    void searchAction(){
+    void searchAction() throws IOException {
         System.out.println("Wyszukiwanie");
+
+        Parent root = FXMLLoader.load(getClass().getResource("search.fxml"));
+        Stage stage = new Stage();
+        stage.setTitle("Wyszukiwanie");
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("sample/style.css");
+        stage.setScene(scene);
+
+        stage.setOnCloseRequest(event -> {
+            System.out.println("Odświeżanie listy kontaktów.");
+            //todo
+        });
+
+        stage.show();
     }
 
     @FXML
@@ -115,8 +154,22 @@ public class mainController {
     }
 
     @FXML
-    void blockedAction(){
+    void blockedAction() throws IOException {
         System.out.println("Zablokowani");
+
+        Parent root = FXMLLoader.load(getClass().getResource("blockedUsers.fxml"));
+        Stage stage = new Stage();
+        stage.setTitle("Zablokowani użytkownicy");
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("sample/style.css");
+        stage.setScene(scene);
+
+        stage.setOnCloseRequest(event -> {
+            System.out.println("Aktualizacja tabeli z userami zablokowanymi.");
+            //todo
+        });
+
+        stage.show();
     }
 
     @FXML

@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="343.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.settingsController">
+<AnchorPane prefHeight="343.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SettingsController">
    <children>
       <Text layoutX="51.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ustawienia">
          <font>

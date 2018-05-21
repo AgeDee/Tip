@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 
-public class settingsController {
+public class SettingsController {
 
     @FXML
     WebView avatarView;
@@ -33,6 +33,7 @@ public class settingsController {
         if(file != null) {
             AvatarManager.uploadAvatar(file, userId);
             setAvatar(AvatarManager.downloadAvatar(userId));
+            System.out.println("Ustawiono nowy avatar");
         }else {
             System.out.println("Nie wczytano pliku");
         }

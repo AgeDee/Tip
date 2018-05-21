@@ -8,10 +8,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="291.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+<AnchorPane prefHeight="291.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
       <children>
-         <Button layoutX="149.0" layoutY="188.0" mnemonicParsing="false" onAction="#OnLoginButtonClick" prefHeight="25.0" prefWidth="92.0" text="Zaloguj" />
-         <Button layoutX="149.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Rejestracja" />
+         <Button defaultButton="true" layoutX="149.0" layoutY="188.0" mnemonicParsing="false" onAction="#OnLoginButtonClick" prefHeight="25.0" prefWidth="92.0" text="Zaloguj" />
+         <Button layoutX="149.0" layoutY="230.0" mnemonicParsing="false" onAction="#OnRegisterButtonClick" prefHeight="25.0" prefWidth="92.0" text="Rejestracja" />
          <Text layoutX="149.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logowanie">
             <font>
                <Font size="20.0" />

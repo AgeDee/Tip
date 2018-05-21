@@ -7,7 +7,7 @@
 <?import javafx.scene.web.WebView?>
 
 
-<AnchorPane prefHeight="349.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.callWindowController">
+<AnchorPane prefHeight="349.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CallWindowController">
    <children>
       <WebView fx:id="avatarView" layoutX="146.0" layoutY="20.0" prefHeight="150.0" prefWidth="150.0" />
       <Button layoutX="193.0" layoutY="246.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Rozłącz" />

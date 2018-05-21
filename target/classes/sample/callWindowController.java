@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-public class callWindowController {
+public class CallWindowController {
 
     @FXML
     WebView avatarView;

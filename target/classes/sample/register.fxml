@@ -10,22 +10,25 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="298.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.registerController">
+<AnchorPane prefHeight="329.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
    <children>
-      <TextField layoutX="162.0" layoutY="104.0" prefHeight="25.0" prefWidth="177.0" />
-      <Label layoutX="55.0" layoutY="108.0" text="Login:" />
-      <Label layoutX="55.0" layoutY="143.0" text="Hasło:" />
-      <Label layoutX="55.0" layoutY="177.0" text="Powtórz hasło:" />
-      <Text layoutX="65.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rejestracja użytkownika">
+      <TextField fx:id="loginField" layoutX="162.0" layoutY="103.0" prefHeight="25.0" prefWidth="177.0" />
+      <Label layoutX="55.0" layoutY="107.0" text="Login:" />
+      <Label layoutX="55.0" layoutY="179.0" text="Hasło:" />
+      <Label layoutX="55.0" layoutY="213.0" text="Powtórz hasło:" />
+      <Text layoutX="65.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rejestracja użytkownika">
          <font>
             <Font size="27.0" />
          </font>
       </Text>
-      <Button layoutX="170.0" layoutY="245.0" mnemonicParsing="false" text="Zarejestruj" />
-      <CheckBox layoutX="171.0" layoutY="211.0" mnemonicParsing="false" text="Akceptuję" />
-      <Label layoutX="55.0" layoutY="69.0" text="Podaj swoje dane:" />
-      <PasswordField layoutX="162.0" layoutY="139.0" prefHeight="25.0" prefWidth="177.0" />
-      <PasswordField layoutX="162.0" layoutY="173.0" prefHeight="25.0" prefWidth="177.0" />
-      <Hyperlink layoutX="245.0" layoutY="208.0" text="regulamin" />
+      <TextField fx:id="emailField" layoutX="162.0" layoutY="140.0" prefHeight="25.0" prefWidth="177.0" />
+      <PasswordField fx:id="password1Field" layoutX="162.0" layoutY="175.0" prefHeight="25.0" prefWidth="177.0" />
+      <PasswordField fx:id="password2Field" layoutX="162.0" layoutY="209.0" prefHeight="25.0" prefWidth="177.0" />
+      <CheckBox fx:id="termsCheckBox" layoutX="171.0" layoutY="247.0" mnemonicParsing="false" text="Akceptuję" />
+      <Hyperlink fx:id="termsHyperLink" layoutX="245.0" layoutY="247.0" onMouseClicked="#termsAction" text="regulamin" />
+      <Button layoutX="170.0" layoutY="281.0" mnemonicParsing="false" onAction="#registerAction" text="Zarejestruj" />
+      <Label layoutX="55.0" layoutY="144.0" text="Email:" />
+      <Label fx:id="infoLabel" layoutX="56.0" layoutY="68.0" text="Podaj swoje dane:" />
+      <Button layoutX="81.0" layoutY="281.0" mnemonicParsing="false" onAction="#backAction" text="Cofnij" />
    </children>
 </AnchorPane>

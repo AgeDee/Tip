@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="616.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainController">
+<AnchorPane prefHeight="616.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
    <children>
       <ListView fx:id="contactsList" layoutX="14.0" layoutY="227.0" onMouseClicked="#contactListAction" prefHeight="338.0" prefWidth="250.0" />
       <Label layoutX="14.0" layoutY="203.0" text="Kontakty:" />
@@ -25,7 +25,6 @@
       <Button fx:id="logoutButton" layoutX="473.0" layoutY="23.0" mnemonicParsing="false" onAction="#logoutAction" text="Wyloguj" />
       <Button fx:id="searchButton" layoutX="14.0" layoutY="577.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="25.0" prefWidth="153.0" text="Szukaj kontaktów" />
       <Button fx:id="deleteButton" layoutX="204.0" layoutY="577.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="25.0" prefWidth="153.0" text="Usuń zaznaczonego" />
-      <Button layoutX="387.0" layoutY="577.0" mnemonicParsing="false" text="Zablokuj zaznaczonego" />
       <Button fx:id="connectButton" layoutX="357.0" layoutY="476.0" mnemonicParsing="false" onAction="#connectAction" style="-fx-background-color: lightgreen;" text="Połącz" />
       <Text layoutX="375.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybrano:">
          <font>

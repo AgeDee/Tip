@@ -17,8 +17,8 @@ public class UserDAO {
 
     static final String DB_URL = "jdbc:mysql://tipdb.czufm3rgmejc.eu-central-1.rds.amazonaws.com:3306/tip_db";
     //  Database credentials
-    static final String USER = ""; //TUTAJ PODAC LOGIN DO BAZY DANYCH
-    static final String PASS = ""; //TUTAJ PODAC HASLO DO BAZY DANYCH
+    static final String USER = "db_user"; //TUTAJ PODAC LOGIN DO BAZY DANYCH
+    static final String PASS = "tipprojekt123"; //TUTAJ PODAC HASLO DO BAZY DANYCH
     private NamedParameterJdbcTemplate jdbc;
 
     public UserDAO(){
@@ -53,6 +53,23 @@ public class UserDAO {
         }catch (Exception ex){
             return null;
         }
+    }
+
+    public User findByUserEmail(String email){
+        String sql = "SELECT * FROM users WHERE email = :email";
+        SqlParameterSource namedParameters = new MapSqlParameterSource("email", email);
+        try {
+            User user = (User) jdbc.queryForObject(sql, namedParameters, new UserRowMapper());
+            return user;
+        }catch (Exception ex){
+            return null;
+        }
+    }
+
+
+    public List<User> searchByUserLogin(String term){
+        String sql = "SELECT * FROM users WHERE login LIKE '%"+term+"%'";
+        return jdbc.query(sql, new UserRowMapper());
     }
 
     public void deleteUserById(int id){
