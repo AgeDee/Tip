@@ -12,6 +12,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.List;
 
 public class MainController {
 
@@ -51,20 +52,19 @@ public class MainController {
     @FXML
     Button deleteButton;
 
-    String userId = CurrentUser.getUserId();
+    UserDAO userDAO = new UserDAO();
+    ContactDAO contactDAO = new ContactDAO();
+
+    String userLogin = userDAO.findByUserLogin(CurrentUser.getUserLogin()).getLogin();
+    int userId = userDAO.findByUserLogin(userLogin).getUserId();
 
     @FXML
     void initialize(){
-        setAvatar(AvatarManager.downloadAvatar(userId));
-        userText.setText(userId);
+        setAvatar(AvatarManager.downloadAvatar(userLogin));
+        userText.setText(userLogin);
+        selectedText.setText("-");
 
-        //temp
-        addResultItem("Testov");
-        addResultItem("m_b");
-        addResultItem("Jabollo13");
-        addResultItem("Ćma");
-
-
+        reloadContactList();
     }
 
     @FXML
@@ -74,7 +74,7 @@ public class MainController {
         Stage stage = (Stage) userText.getScene().getWindow();
         stage.close();
 
-        CurrentUser.setUserId("");
+        CurrentUser.setUserLogin("");
 
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         Scene scene = new Scene(root);
@@ -91,6 +91,26 @@ public class MainController {
     @FXML
     void deleteAction(){
         System.out.println("Usuwanie");
+
+        if (contactsList.getSelectionModel().getSelectedIndex() != -1) {
+
+            String selectedUser = contactsList.getSelectionModel().getSelectedItem();
+            int selectedUserId = userDAO.findByUserLogin(selectedUser).getUserId();
+
+            List<Contact> contactListResult = contactDAO.findByUserId(userId);
+
+            for(Contact c : contactListResult){
+                if(c.getContact_id() == selectedUserId){
+                    contactDAO.deleteContactById(c.getId());
+                    System.out.println("Login usuniętego użytkownika: " + userDAO.findByUserId(c.getContact_id()).getLogin());
+                    reloadContactList();
+                }
+            }
+
+        } else {
+            System.out.println("Nie wybrano elementu!");
+        }
+
     }
 
     @FXML
@@ -121,7 +141,7 @@ public class MainController {
 
         stage.setOnCloseRequest(event -> {
             System.out.println("Wczytywanie avatara.");
-            setAvatar(AvatarManager.downloadAvatar(userId));
+            setAvatar(AvatarManager.downloadAvatar(userLogin));
         });
 
         stage.show();
@@ -133,24 +153,55 @@ public class MainController {
     void searchAction() throws IOException {
         System.out.println("Wyszukiwanie");
 
-        Parent root = FXMLLoader.load(getClass().getResource("search.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("search.fxml"));
+        Parent root = loader.load();
         Stage stage = new Stage();
         stage.setTitle("Wyszukiwanie");
         Scene scene = new Scene(root);
         scene.getStylesheets().add("sample/style.css");
         stage.setScene(scene);
 
+        SearchController controller = loader.getController();
+        controller.setStageAndSetupListeners(stage);
+
         stage.setOnCloseRequest(event -> {
             System.out.println("Odświeżanie listy kontaktów.");
-            //todo
+            reloadContactList();
         });
 
         stage.show();
     }
 
     @FXML
-    void connectAction(){
+    void connectAction() throws IOException {
         System.out.println("Połącz");
+
+        if (contactsList.getSelectionModel().getSelectedIndex() != -1) {
+
+            String selectedUser = contactsList.getSelectionModel().getSelectedItem();
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Połączenie");
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add("sample/style.css");
+            stage.setScene(scene);
+
+            CallWindowController controller = loader.getController();
+            controller.setTargetUser(selectedUser);
+
+            stage.setOnCloseRequest(event -> {
+                System.out.println("Zakończenie połączenia");
+                //todo rozłączanie po kliknięciu krzyżyka
+            });
+
+            stage.show();
+
+
+        } else {
+            System.out.println("Nie wybrano elementu!");
+        }
     }
 
     @FXML
@@ -198,6 +249,16 @@ public class MainController {
         WebEngine webEngine = avatarView.getEngine();
         String avatarContent = "<img style=\"width: 133;height: 133px;\" src=\" " + url + " \"></img> ";
         webEngine.loadContent(avatarContent);
+    }
+
+    void reloadContactList(){
+        List<Contact> contactListResult = contactDAO.findByUserId(userId);
+
+        clearResultList();
+
+        for(Contact c : contactListResult){
+            addResultItem(String.valueOf(userDAO.findByUserId(c.getContact_id()).getLogin()));
+        }
     }
 
 }

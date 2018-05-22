@@ -15,11 +15,11 @@
             <Font size="22.0" />
          </font>
       </Text>
-      <TextField fx:id="searchText" layoutX="21.0" layoutY="82.0" prefHeight="25.0" prefWidth="273.0" text="Test" />
-      <Button fx:id="searchButton" layoutX="309.0" layoutY="82.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="25.0" prefWidth="121.0" text="Szukaj!" />
+      <TextField fx:id="searchText" layoutX="21.0" layoutY="82.0" prefHeight="25.0" prefWidth="273.0" promptText="nazwa użytkownika" />
+      <Button fx:id="searchButton" defaultButton="true" layoutX="309.0" layoutY="82.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="25.0" prefWidth="121.0" text="Szukaj!" />
       <ListView fx:id="resultList" layoutX="21.0" layoutY="125.0" prefHeight="249.0" prefWidth="273.0" />
       <Button fx:id="addSelectedButton" layoutX="309.0" layoutY="125.0" mnemonicParsing="false" onAction="#addSelectedAction" prefHeight="25.0" prefWidth="121.0" text="Dodaj wybrany" />
-      <Button fx:id="cancelButton" layoutX="309.0" layoutY="196.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="25.0" prefWidth="121.0" text="Anuluj" />
+      <Button fx:id="cancelButton" layoutX="309.0" layoutY="196.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="25.0" prefWidth="121.0" text="Zakończ" />
       <Label fx:id="infoLabel" layoutX="309.0" layoutY="165.0" text="InfoLabel" />
    </children>
 </AnchorPane>

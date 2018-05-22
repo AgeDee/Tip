@@ -8,16 +8,6 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-//    @Override
-//    public void start(Stage primaryStage) throws Exception{
-//        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-//        primaryStage.setTitle("Komunikator");
-//        Scene scene = new Scene(root);
-//        scene.getStylesheets().add("sample/style.css");
-//        primaryStage.setScene(scene);
-//        primaryStage.show();
-//    }
-
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
@@ -30,7 +20,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        CurrentUser.setUserId("userId");
+        CurrentUser.setUserLogin("userLogin");
         launch(args);
     }
 }

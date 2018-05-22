@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BlockedUsersController">
    <children>
-      <ListView fx:id="blockedList" layoutX="14.0" layoutY="84.0" prefHeight="386.0" prefWidth="311.0" />
+      <ListView layoutX="14.0" layoutY="84.0" prefHeight="386.0" prefWidth="311.0" />
       <Button layoutX="334.0" layoutY="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="295.0" text="Usuń zaznaczonego z listy zablokowanych" />
       <Button fx:id="closeButton" layoutX="334.0" layoutY="121.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="25.0" prefWidth="295.0" text="Zakończ" />
       <Text layoutX="23.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista zablokowanych użytkowników">

@@ -9,9 +9,6 @@ import javax.swing.text.html.ListView;
 public class BlockedUsersController {
 
     @FXML
-    ListView blockedList;
-
-    @FXML
     Button closeButton;
 
     @FXML

@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -7,6 +8,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.util.List;
 
@@ -31,10 +33,18 @@ public class SearchController {
     Label infoLabel;
 
     private UserDAO userDAO = new UserDAO();
+    private ContactDAO contactDAO = new ContactDAO();
+
+    Stage stage;
 
     @FXML
     void initialize(){
         infoLabel.setText("");
+
+        cancelButton.setOnAction(event -> {
+            stage.getOnCloseRequest().handle(new WindowEvent(stage, WindowEvent.WINDOW_CLOSE_REQUEST));
+            stage.close();
+        });
     }
 
     @FXML
@@ -52,8 +62,25 @@ public class SearchController {
     @FXML
     void addSelectedAction(){
         if(resultList.getSelectionModel().getSelectedIndex() != -1) {
-            if (1 == 1) { //todo, sprawdzanie czy dodawany user znajduje się już na liście kontaktów
+            int userId = userDAO.findByUserLogin(CurrentUser.getUserLogin()).getUserId();
+            int selectedUserId = userDAO.findByUserLogin(resultList.getSelectionModel().getSelectedItem()).getUserId();
+            List<Contact> contactListResult = contactDAO.findByUserId(userId);
+            boolean isInList = false; //czy wybrany user znajduje sie juz na liście - flaga
+
+            for(Contact c : contactListResult){
+                if(c.getContact_id() == selectedUserId){
+                    isInList = true;
+                    break;
+                }
+            }
+
+
+            if (!isInList) {
                 System.out.println("Dodawanie do listy użytkowników");
+
+                Contact newContact = new Contact(userId, selectedUserId); //tworzenie kontaktu
+                contactDAO.create(newContact); //dodanie do bazy
+
                 infoLabel.setTextFill(Color.GREEN);
                 infoLabel.setText("Dodano do listy");
             } else {
@@ -70,8 +97,8 @@ public class SearchController {
 
     @FXML
     void cancelAction(){
-        Stage stage = (Stage) searchText.getScene().getWindow();
-        stage.close();
+        //stage.close();
+        //zastąpiono eventem w inicie
     }
 
     void addResultItem(String name){
@@ -80,5 +107,9 @@ public class SearchController {
 
     void clearResultList(){
         resultList.getItems().clear();
+    }
+
+    public void setStageAndSetupListeners(Stage stage) {
+        this.stage = stage;
     }
 }
