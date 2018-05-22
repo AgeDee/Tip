@@ -1,19 +1,37 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 public class CallWindowController {
 
     @FXML
+    Text targetUserText;
+
+    @FXML
     WebView avatarView;
+
+    String targetUserLogin;
+    int targetUserId;
+
+    UserDAO userDAO = new UserDAO();
 
     @FXML
     void initialize(){
-        WebEngine webEngine = avatarView.getEngine();
-        String avatarContent = "<img hight=133 width=133 src=\"http://zadymki.pl/upload/photos/2018/01/gPdqJvLEbQwFm5SGH9Ym_30_b497cb3ee27436b158e886d3175e8bba_avatar_full.jpg\"></img> ";
-        webEngine.loadContent(avatarContent);
     }
 
+    public void setTargetUser(String targetUserLogin) {
+        this.targetUserLogin = targetUserLogin;
+        targetUserText.setText(targetUserLogin);
+        targetUserId = userDAO.findByUserLogin(targetUserLogin).getUserId();
+        setAvatar(AvatarManager.downloadAvatar(targetUserLogin));
+    }
+
+    void setAvatar(String url){
+        WebEngine webEngine = avatarView.getEngine();
+        String avatarContent = "<img style=\"width: 133;height: 133px;\" src=\" " + url + " \"></img> ";
+        webEngine.loadContent(avatarContent);
+    }
 }

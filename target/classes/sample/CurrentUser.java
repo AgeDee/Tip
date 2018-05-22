@@ -1,21 +1,21 @@
 package sample;
 
 public class CurrentUser {
-    static String userId = "userId";
+    static String userLogin = "userLogin";
 
     public CurrentUser() {
     }
 
-    public CurrentUser(String userId){
-        this.userId = userId;
+    public CurrentUser(String userLogin){
+        this.userLogin = userLogin;
     }
 
-    public static String getUserId() {
-        return userId;
+    public static String getUserLogin() {
+        return userLogin;
     }
 
-    public static void setUserId(String userId) {
-        CurrentUser.userId = userId;
+    public static void setUserLogin(String userLogin) {
+        CurrentUser.userLogin = userLogin;
     }
 
 }

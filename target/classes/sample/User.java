@@ -12,7 +12,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "userId=" + userId +
+                "userLogin=" + userId +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
@@ -20,7 +20,7 @@ public class User {
     }
 
     public User(String login, String password, String email) {
-        //this.userId = userId;
+        //this.userLogin = userLogin;
         this.login = login;
         this.password = password;
         this.email = email;

@@ -12,6 +12,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainController {
@@ -54,6 +55,7 @@ public class MainController {
 
     UserDAO userDAO = new UserDAO();
     ContactDAO contactDAO = new ContactDAO();
+    BlockedUserDAO blockedUserDAO = new BlockedUserDAO();
 
     String userLogin = userDAO.findByUserLogin(CurrentUser.getUserLogin()).getLogin();
     int userId = userDAO.findByUserLogin(userLogin).getUserId();
@@ -86,6 +88,19 @@ public class MainController {
     @FXML
     void blockAction(){
         System.out.println("Zablokuj");
+
+        if (contactsList.getSelectionModel().getSelectedIndex() != -1) {
+
+            String selectedUser = contactsList.getSelectionModel().getSelectedItem();
+            int selectedUserId = userDAO.findByUserLogin(selectedUser).getUserId();
+
+            BlockedUser blockedUser = new BlockedUser(userId, selectedUserId, "current_timestamp"); //data tutaj nie gra roli
+            blockedUserDAO.create(blockedUser);
+            System.out.println("Użytkownik " + selectedUser + " został wpisany na listę zablokowanych użytkowników.");
+
+        } else {
+            System.out.println("Nie wybrano elementu!");
+        }
     }
 
     @FXML
@@ -253,11 +268,21 @@ public class MainController {
 
     void reloadContactList(){
         List<Contact> contactListResult = contactDAO.findByUserId(userId);
+        List<BlockedUser> blockedUsersResult = blockedUserDAO.getByUserId(userId);
+        List<Integer> blockedUserIdsList = new ArrayList();
+
+        for(BlockedUser b : blockedUsersResult){
+            blockedUserIdsList.add(b.getBlockedId());
+        }
 
         clearResultList();
 
         for(Contact c : contactListResult){
-            addResultItem(String.valueOf(userDAO.findByUserId(c.getContact_id()).getLogin()));
+            if(!blockedUserIdsList.contains(c.getContact_id())){
+                addResultItem(String.valueOf(userDAO.findByUserId(c.getContact_id()).getLogin()));
+            }else{
+                System.out.println("Wykryto zablokowanego usera: " + userDAO.findByUserId(c.getContact_id()).getLogin());
+            }
         }
     }
 

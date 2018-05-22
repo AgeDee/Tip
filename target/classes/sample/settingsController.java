@@ -14,7 +14,7 @@ public class SettingsController {
     WebView avatarView;
 
 
-    String userId = CurrentUser.getUserId();
+    String userId = CurrentUser.getUserLogin();
 
     @FXML
     void initialize() {

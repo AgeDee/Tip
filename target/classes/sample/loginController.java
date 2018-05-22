@@ -37,7 +37,7 @@ public class LoginController {
                 //else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(userPassword.getText())){
                 else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(passwordHash)) {
                     System.out.println("Login Success");
-                    CurrentUser.setUserId(userLogin.getText());
+                    CurrentUser.setUserLogin(userLogin.getText());
                     Stage stage = (Stage) userLogin.getScene().getWindow();
                     stage.close();
 

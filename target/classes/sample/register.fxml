@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="329.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
    <children>
-      <TextField fx:id="loginField" layoutX="162.0" layoutY="103.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="loginField" layoutX="162.0" layoutY="103.0" prefHeight="25.0" prefWidth="177.0" promptText="login" />
       <Label layoutX="55.0" layoutY="107.0" text="Login:" />
       <Label layoutX="55.0" layoutY="179.0" text="Hasło:" />
       <Label layoutX="55.0" layoutY="213.0" text="Powtórz hasło:" />
@@ -21,9 +21,9 @@
             <Font size="27.0" />
          </font>
       </Text>
-      <TextField fx:id="emailField" layoutX="162.0" layoutY="140.0" prefHeight="25.0" prefWidth="177.0" />
-      <PasswordField fx:id="password1Field" layoutX="162.0" layoutY="175.0" prefHeight="25.0" prefWidth="177.0" />
-      <PasswordField fx:id="password2Field" layoutX="162.0" layoutY="209.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="emailField" layoutX="162.0" layoutY="140.0" prefHeight="25.0" prefWidth="177.0" promptText="email" />
+      <PasswordField fx:id="password1Field" layoutX="162.0" layoutY="175.0" prefHeight="25.0" prefWidth="177.0" promptText="hasło" />
+      <PasswordField fx:id="password2Field" layoutX="162.0" layoutY="209.0" prefHeight="25.0" prefWidth="177.0" promptText="powtórz hasło" />
       <CheckBox fx:id="termsCheckBox" layoutX="171.0" layoutY="247.0" mnemonicParsing="false" text="Akceptuję" />
       <Hyperlink fx:id="termsHyperLink" layoutX="245.0" layoutY="247.0" onMouseClicked="#termsAction" text="regulamin" />
       <Button layoutX="170.0" layoutY="281.0" mnemonicParsing="false" onAction="#registerAction" text="Zarejestruj" />
