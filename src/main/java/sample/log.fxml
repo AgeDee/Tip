@@ -15,11 +15,11 @@
             <Font size="19.0" />
          </font>
       </Text>
-      <TableView layoutX="25.0" layoutY="58.0" prefHeight="325.0" prefWidth="395.0">
+      <TableView fx:id="tableView" layoutX="25.0" layoutY="58.0" prefHeight="325.0" prefWidth="395.0">
         <columns>
-          <TableColumn prefWidth="168.0" text="Użytkownik" />
-          <TableColumn prefWidth="93.0" text="Czas" />
-            <TableColumn prefWidth="132.0" text="Data" />
+          <TableColumn fx:id="userColumn" prefWidth="168.0" text="Użytkownik" />
+          <TableColumn fx:id="descriptionColumn" prefWidth="93.0" text="Czas" />
+            <TableColumn fx:id="dateColumn" prefWidth="132.0" text="Data" />
         </columns>
       </TableView>
    </children>

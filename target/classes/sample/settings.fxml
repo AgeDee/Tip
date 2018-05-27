@@ -18,9 +18,9 @@
       <Button layoutX="273.0" layoutY="247.0" mnemonicParsing="false" onAction="#selectAvatarAction" prefHeight="25.0" prefWidth="150.0" text="Załaduj avatar" />
       <WebView fx:id="avatarView" layoutX="273.0" layoutY="52.0" prefHeight="150.0" prefWidth="150.0" />
       <Label layoutX="29.0" layoutY="98.0" text="Nowe hasło:" />
-      <PasswordField layoutX="29.0" layoutY="126.0" prefHeight="25.0" prefWidth="194.0" />
+      <PasswordField fx:id="pass1Field" layoutX="29.0" layoutY="126.0" prefHeight="25.0" prefWidth="194.0" />
       <Label layoutX="29.0" layoutY="164.0" text="Powtórz hasło:" />
-      <PasswordField layoutX="29.0" layoutY="192.0" prefHeight="25.0" prefWidth="194.0" />
-      <Button layoutX="32.0" layoutY="247.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Zmień hasło!" />
+      <PasswordField fx:id="pass2Field" layoutX="29.0" layoutY="192.0" prefHeight="25.0" prefWidth="194.0" />
+      <Button layoutX="32.0" layoutY="247.0" mnemonicParsing="false" onAction="#changePassActon" prefHeight="25.0" prefWidth="150.0" text="Zmień hasło!" />
    </children>
 </AnchorPane>

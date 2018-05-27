@@ -62,7 +62,7 @@ public class BlockedUserDAO {
     public void updateById(int id, int userId, int blockedId, String date){
         String sql = "UPDATE users SET userId = :userId, blockedId = :blockedId, date = :date WHERE id = :id";
         MapSqlParameterSource namedParameters = new MapSqlParameterSource();
-        namedParameters.addValue("userId", userId);
+        namedParameters.addValue("userLogin", userId);
         namedParameters.addValue("blockedId", blockedId);
         namedParameters.addValue("date", date);
         namedParameters.addValue("id", id);

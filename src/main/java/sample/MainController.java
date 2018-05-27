@@ -97,6 +97,7 @@ public class MainController {
             BlockedUser blockedUser = new BlockedUser(userId, selectedUserId, "current_timestamp"); //data tutaj nie gra roli
             blockedUserDAO.create(blockedUser);
             System.out.println("Użytkownik " + selectedUser + " został wpisany na listę zablokowanych użytkowników.");
+            reloadContactList();
 
         } else {
             System.out.println("Nie wybrano elementu!");
@@ -132,12 +133,17 @@ public class MainController {
     void logAction() throws IOException {
         System.out.println("Historia");
 
-        Parent root = FXMLLoader.load(getClass().getResource("log.fxml"));
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("log.fxml"));
+        Parent root = loader.load();
         Stage stage = new Stage();
         stage.setTitle("Historia");
         Scene scene = new Scene(root);
         scene.getStylesheets().add("sample/style.css");
         stage.setScene(scene);
+
+        LogController controller = loader.getController();
+        controller.loadList();
 
         stage.show();
 
@@ -160,8 +166,6 @@ public class MainController {
         });
 
         stage.show();
-
-
     }
 
     @FXML
@@ -223,16 +227,20 @@ public class MainController {
     void blockedAction() throws IOException {
         System.out.println("Zablokowani");
 
-        Parent root = FXMLLoader.load(getClass().getResource("blockedUsers.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("blockedUsers.fxml"));
+        Parent root = loader.load();
         Stage stage = new Stage();
         stage.setTitle("Zablokowani użytkownicy");
         Scene scene = new Scene(root);
         scene.getStylesheets().add("sample/style.css");
         stage.setScene(scene);
 
+        BlockedUsersController controller = loader.getController();
+        controller.setStageAndSetupListeners(stage);
+
         stage.setOnCloseRequest(event -> {
-            System.out.println("Aktualizacja tabeli z userami zablokowanymi.");
-            //todo
+            System.out.println("Aktualizacja listy z kontaktami.");
+            reloadContactList();
         });
 
         stage.show();

@@ -51,7 +51,7 @@ public class BlockedUser {
     public String toString() {
         return "BlockedUser{" +
                 "id=" + id +
-                ", userId=" + userId +
+                ", userLogin=" + userId +
                 ", blockedId=" + blockedId +
                 ", date='" + date + '\'' +
                 '}';

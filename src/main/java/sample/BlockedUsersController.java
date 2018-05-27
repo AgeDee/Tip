@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.util.List;
 
@@ -20,9 +21,16 @@ public class BlockedUsersController {
 
     String userLogin = userDAO.findByUserLogin(CurrentUser.getUserLogin()).toString();
     int userId = userDAO.findByUserLogin(CurrentUser.getUserLogin()).getUserId();
+    private Stage stage;
 
     @FXML
     void initialize(){
+
+        closeButton.setOnAction(event -> {
+            stage.getOnCloseRequest().handle(new WindowEvent(stage, WindowEvent.WINDOW_CLOSE_REQUEST));
+            stage.close();
+        });
+
         reloadList();
     }
 
@@ -48,8 +56,9 @@ public class BlockedUsersController {
 
     @FXML
     void closeAction(){
-        Stage stage = (Stage) closeButton.getScene().getWindow();
-        stage.close();
+//        Stage stage = (Stage) closeButton.getScene().getWindow();
+//        stage.close();
+        //zastąpiono w inicie
     }
 
     void addResultItem(String name){
@@ -69,4 +78,7 @@ public class BlockedUsersController {
         }
     }
 
+    public void setStageAndSetupListeners(Stage stage) {
+        this.stage = stage;
+    }
 }

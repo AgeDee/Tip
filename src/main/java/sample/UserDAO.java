@@ -100,8 +100,6 @@ public class UserDAO {
         System.out.println("Created record with: " + user.toString());
     }
 
-
-
 }
 
 class UserRowMapper implements RowMapper<User> {
