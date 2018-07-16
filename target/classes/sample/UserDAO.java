@@ -18,7 +18,7 @@ public class UserDAO {
     static final String DB_URL = "jdbc:mysql://tipdb.czufm3rgmejc.eu-central-1.rds.amazonaws.com:3306/tip_db";
     //  Database credentials
     static final String USER = "db_user"; //TUTAJ PODAC LOGIN DO BAZY DANYCH
-    static final String PASS = "tipprojekt123"; //TUTAJ PODAC HASLO DO BAZY DANYCH
+    static final String PASS = "T!Pprojekt135"; //TUTAJ PODAC HASLO DO BAZY DANYCH
     private NamedParameterJdbcTemplate jdbc;
 
     public UserDAO(){

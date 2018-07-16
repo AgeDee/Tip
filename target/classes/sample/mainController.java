@@ -60,11 +60,35 @@ public class MainController {
     String userLogin = userDAO.findByUserLogin(CurrentUser.getUserLogin()).getLogin();
     int userId = userDAO.findByUserLogin(userLogin).getUserId();
 
+    //Utworzenie obiektu voipConnection w celu wywoływania funkcji do połączenia w dalszej czesci programu
+    public static VoipConnection voipConnection = new VoipConnection();
+
     @FXML
     void initialize(){
         setAvatar(AvatarManager.downloadAvatar(userLogin));
         userText.setText(userLogin);
         selectedText.setText("-");
+
+        //Odpalenie funkcji receiveCall() w celu nasłuchiwania na okreslonym ip i porcie
+
+//        new Thread(() -> {
+//            System.out.println("Thread started!!!!");
+//            voipConnection.receiveCall();
+//        }).start();
+
+        //Odpalenie servera do komunikacji pomiędzy clientami
+        new Thread(() -> {
+            System.out.println("Thread started!!!!!");
+            try {
+                MessageCommunicationClass messageServer = new MessageCommunicationClass();
+                messageServer.startMsgServer("192.168.0.28", 8888);
+                //messageServer.startMsgServer("192.168.0.15", 8888);
+            }catch (Exception ex){
+                System.out.println("Błąd w funkcji MainController::initialize()");
+                System.out.println(ex);
+            }
+
+        }).start();
 
         reloadContactList();
     }
@@ -147,6 +171,7 @@ public class MainController {
 
         stage.show();
 
+
     }
 
     @FXML
@@ -197,6 +222,27 @@ public class MainController {
 
         if (contactsList.getSelectionModel().getSelectedIndex() != -1) {
 
+
+            //Włączenie nasłuciwania przez mikrofon, ustawienie flagi microphoneON na true wewnątrz funkcji
+            //i odpalenie wątku łączącego się z odbiorcą
+            //voipConnection.captureAudio();
+
+
+            //Tworzymy clienta do wymiany komunikatów z serwerem, w konstruktorze
+            //podajemy ip serwera, z którym się łączymy oraz jego port
+            MessageCommunicationClientClass messageClient =
+                    new MessageCommunicationClientClass("192.168.0.28",8888);
+            messageClient.startMsgClient();
+            messageClient.sendMessage("CONNECT");
+            if(messageClient.receiveMessage().equals("OK")){
+                new Thread(() -> {
+                    System.out.println("Serwer Voip started!!!!");
+                    voipConnection.receiveCall();
+                }).start();
+
+                voipConnection.captureAudio("192.168.0.28",9999);
+            }
+
             String selectedUser = contactsList.getSelectionModel().getSelectedItem();
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
@@ -212,7 +258,13 @@ public class MainController {
 
             stage.setOnCloseRequest(event -> {
                 System.out.println("Zakończenie połączenia");
-                //todo rozłączanie po kliknięciu krzyżyka
+
+                //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
+                voipConnection.stopServer();
+                messageClient.sendMessage("DISCONNECT");
+                voipConnection.stopCapture();
+                messageClient.closeMsgClient();
+
             });
 
             stage.show();

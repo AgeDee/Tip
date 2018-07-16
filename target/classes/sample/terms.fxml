@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="237.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TermsController">
+   <children>
+      <Text layoutX="39.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regulamin:" />
+      <Text layoutX="39.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1st RULE: You do not talk about FIGHT CLUB." wrappingWidth="305.09375" />
+      <Text layoutX="39.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2nd RULE: You DO NOT talk about FIGHT CLUB." wrappingWidth="305.093751847744" />
+      <Text layoutX="39.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3rd RULE: If someone says &quot;stop&quot; or goes limp, taps out the fight is over." wrappingWidth="478.093751847744" />
+      <Text layoutX="39.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4th RULE: Only two guys to a fight." wrappingWidth="237.09375" />
+      <Text layoutX="39.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5th RULE: One fight at a time." wrappingWidth="237.09375" />
+      <Text layoutX="39.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6th RULE: No shirts, no shoes." wrappingWidth="237.09375" />
+      <Text layoutX="36.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 7th RULE: Fights will go on as long as they have to." wrappingWidth="368.09375" />
+      <Text layoutX="39.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8th RULE: If this is your first night at FIGHT CLUB, you HAVE to fight." wrappingWidth="420.09375" />
+   </children>
+</AnchorPane>
