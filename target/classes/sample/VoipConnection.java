@@ -96,7 +96,7 @@ public class VoipConnection {
     }
 
     private AudioFormat getAudioFormat() {
-        float sampleRate = 16000.0F;
+        float sampleRate = 20000.0F;
         int sampleInbits = 16;
         int channels = 1;
         boolean signed = true;

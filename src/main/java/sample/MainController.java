@@ -1,15 +1,19 @@
 package sample;
 
+import javafx.application.Platform;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -222,57 +226,156 @@ public class MainController {
 
         if (contactsList.getSelectionModel().getSelectedIndex() != -1) {
 
-
-            //Włączenie nasłuciwania przez mikrofon, ustawienie flagi microphoneON na true wewnątrz funkcji
-            //i odpalenie wątku łączącego się z odbiorcą
-            //voipConnection.captureAudio();
-
-
-            //Tworzymy clienta do wymiany komunikatów z serwerem, w konstruktorze
-            //podajemy ip serwera, z którym się łączymy oraz jego port
-            MessageCommunicationClientClass messageClient =
-                    new MessageCommunicationClientClass("192.168.0.28",8888);
-            messageClient.startMsgClient();
-            messageClient.sendMessage("CONNECT");
-            if(messageClient.receiveMessage().equals("OK")){
-                new Thread(() -> {
-                    System.out.println("Serwer Voip started!!!!");
-                    voipConnection.receiveCall();
-                }).start();
-
-                voipConnection.captureAudio("192.168.0.28",9999);
-            }
-
             String selectedUser = contactsList.getSelectionModel().getSelectedItem();
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("callToUser.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
-            stage.setTitle("Połączenie");
+            stage.setTitle("Łączę ...");
             Scene scene = new Scene(root);
             scene.getStylesheets().add("sample/style.css");
             stage.setScene(scene);
 
-            CallWindowController controller = loader.getController();
-            controller.setTargetUser(selectedUser);
+            CallToUserController callToUserController = loader.getController();
+            callToUserController.setInfomrationalText(selectedUser);
 
-            stage.setOnCloseRequest(event -> {
-                System.out.println("Zakończenie połączenia");
+//            stage.setOnShowing(new EventHandler<WindowEvent>() {
+//                @Override
+//                public void handle(WindowEvent event) {
+//
+//                        new Thread(() -> {
+//                            try {
+//                                handleConnection(stage);
+//                            }catch(Exception ex){
+//                                System.out.println("Exception in Stage::setOnShowing connectAction class");
+//                                System.out.println(ex);
+//                            }
+//                        });
+//                }
+//            });
 
-                //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
-                voipConnection.stopServer();
-                messageClient.sendMessage("DISCONNECT");
-                voipConnection.stopCapture();
-                messageClient.closeMsgClient();
+            new Thread(() -> {
 
-            });
+                try {
+                        handleConnection(stage);
+                    }catch(Exception ex){
+                        System.out.println("Exception in Stage::setOnShowing connectAction class");
+                        System.out.println(ex);
+                    }
+            }).start();
 
             stage.show();
+
+
+
+
 
 
         } else {
             System.out.println("Nie wybrano elementu!");
         }
+    }
+
+    private void handleConnection(Stage stageToClose) throws IOException {
+        //Początek kodu wykonywanego po stage.show
+
+        //Tworzymy clienta do wymiany komunikatów z serwerem, w konstruktorze
+        //podajemy ip serwera, z którym się łączymy oraz jego port
+        MessageCommunicationClientClass messageClient =
+                new MessageCommunicationClientClass("192.168.0.28",8888);
+        messageClient.startMsgClient();
+        messageClient.sendMessage("CONNECT");
+
+
+        String response = messageClient.receiveMessage();
+        if(response.equals("OK")){
+            new Thread(() -> {
+                System.out.println("Serwer Voip started!!!!");
+                voipConnection.receiveCall();
+            }).start();
+
+            voipConnection.captureAudio("192.168.0.28",9999);
+
+            Platform.runLater(() -> {
+                stageToClose.close();
+                String selectedUser = contactsList.getSelectionModel().getSelectedItem();
+
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
+                Parent root = null;
+                try {
+                    root = loader.load();
+                } catch (IOException e) {
+                    System.out.println("Exception in handleConnection function");
+                    System.out.println(e);
+                }
+                Stage stage = new Stage();
+                stage.setTitle("Połączenie");
+                Scene scene = new Scene(root);
+                scene.getStylesheets().add("sample/style.css");
+                stage.setScene(scene);
+
+                CallWindowController controller = loader.getController();
+                controller.setTargetUser(selectedUser);
+
+                stage.setOnCloseRequest(event -> {
+                    System.out.println("Zakończenie połączenia");
+
+                    //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
+                    voipConnection.stopServer();
+                    messageClient.sendMessage("DISCONNECT");
+                    voipConnection.stopCapture();
+                    messageClient.closeMsgClient();
+
+                });
+
+                stage.show();
+            });
+
+
+//            String selectedUser = contactsList.getSelectionModel().getSelectedItem();
+//
+//            FXMLLoader loader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
+//            Parent root = loader.load();
+//            Stage stage = new Stage();
+//            stage.setTitle("Połączenie");
+//            Scene scene = new Scene(root);
+//            scene.getStylesheets().add("sample/style.css");
+//            stage.setScene(scene);
+//
+//            CallWindowController controller = loader.getController();
+//            controller.setTargetUser(selectedUser);
+//
+//            stage.setOnCloseRequest(event -> {
+//                System.out.println("Zakończenie połączenia");
+//
+//                //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
+//                voipConnection.stopServer();
+//                messageClient.sendMessage("DISCONNECT");
+//                voipConnection.stopCapture();
+//                messageClient.closeMsgClient();
+//
+//            });
+//
+//            stage.show();
+        }
+        else if (response.equals("REJECT")){
+            Platform.runLater(() -> {
+                stageToClose.close();
+            });
+
+            messageClient.closeMsgClient();
+
+            Platform.runLater(() -> {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText("Niepowodzenie");
+                alert.setTitle("Połączenie zerwane");
+                alert.setContentText("Użytkownik odrzucił twoje połączenie");
+                alert.showAndWait();
+            });
+
+        }
+
+        //Koniec kodu do wrzucenia
     }
 
     @FXML

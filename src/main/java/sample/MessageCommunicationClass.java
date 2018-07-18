@@ -1,6 +1,13 @@
 package sample;
 
+import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.InetAddress;
@@ -58,15 +65,69 @@ class ServerMessageCommunicationClass extends Thread {
                 switch (msg) {
                     case "CONNECT":
                     {
-                        //Uruchamiamy server voip
-                        new Thread(() -> {
-                            System.out.println("Voip Server started!!!");
-                            MainController.voipConnection.receiveCall();
-                        }).start();
+//                        //Uruchamiamy server voip
+//                        new Thread(() -> {
+//                            System.out.println("Voip Server started!!!");
+//                            MainController.voipConnection.receiveCall();
+//                        }).start();
 
-                        String messageToSend = "OK" + "\n";
-                        clientCommunicationMessageOutput.write(messageToSend,0,messageToSend.length());
-                        clientCommunicationMessageOutput.flush();
+//                        String messageToSend = "OK" + "\n";
+//                        clientCommunicationMessageOutput.write(messageToSend,0,messageToSend.length());
+//                        clientCommunicationMessageOutput.flush();
+                        Platform.runLater(() -> {
+
+                        try {
+
+                            //Otwieranie okna informującego o tym, że ktoś dzwoni
+                            FXMLLoader loader = new FXMLLoader(getClass().getResource("connectionWindow.fxml"));
+                            Parent root = loader.load();
+                            Stage stage = new Stage();
+                            stage.setTitle("Próba połączenia");
+                            Scene scene = new Scene(root);
+                            scene.getStylesheets().add("sample/style.css");
+                            stage.setScene(scene);
+
+                            ConnectionWindowController connectionWindowController = loader.getController();
+
+                            //Akcja na przyciśnięcie Buttona "Odbierz"
+                            connectionWindowController.getCallButton.setOnAction((event) -> {
+                                //Uruchamiamy server voip
+                                new Thread(() -> {
+                                    System.out.println("Voip Server started!!!");
+                                    MainController.voipConnection.receiveCall();
+                                }).start();
+
+                                try {
+                                    String messageToSend = "OK" + "\n";
+                                    clientCommunicationMessageOutput.write(messageToSend, 0, messageToSend.length());
+                                    clientCommunicationMessageOutput.flush();
+                                } catch (IOException ex) {
+                                    System.out.println("Exception in ServerMessageCommunicationClass:: CONNECT message");
+                                }
+
+                                stage.close();
+                            });
+
+                            connectionWindowController.rejectCallButton.setOnAction((event) -> {
+                                try {
+                                    String messageToSend = "REJECT" + "\n";
+                                    clientCommunicationMessageOutput.write(messageToSend, 0, messageToSend.length());
+                                    clientCommunicationMessageOutput.flush();
+                                } catch (IOException ex) {
+                                    System.out.println("Exception in ServerMessageCommunicationClass:: CONNECT message");
+                                }
+
+                                stage.close();
+                            });
+
+
+                            stage.show();
+
+                        }catch(Exception ex){
+                            System.out.println("Exception in ServerMessageCommunication:CONNECT");
+                            System.out.println(ex);
+                        }
+                        });
 
                     }
                     break;
