@@ -14,8 +14,12 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import static sample.MainController.mainMessageClient;
+import static sample.MainController.voipConnection;
+
 public class MessageCommunicationClass {
 
+    public static String callerIP;
 
     public void startMsgServer(String msgServerIp, int msgServerPort) throws Exception{
 
@@ -40,7 +44,7 @@ class ServerMessageCommunicationClass extends Thread {
 
     private boolean exit = false;
 
-    //Zmienne zarządzające serwerem VoIP
+
 
 
     public ServerMessageCommunicationClass(Socket connectedSocket){
@@ -50,6 +54,8 @@ class ServerMessageCommunicationClass extends Thread {
             commandReader = new BufferedReader(clientCommunicationMessageInput);
             clientCommunicationMessageOutput =
                     new OutputStreamWriter(clientCommunicationSocket.getOutputStream(), "UTF-8");
+
+
             start();
         }
         catch (Exception ex){
@@ -94,7 +100,7 @@ class ServerMessageCommunicationClass extends Thread {
                                 //Uruchamiamy server voip
                                 new Thread(() -> {
                                     System.out.println("Voip Server started!!!");
-                                    MainController.voipConnection.receiveCall();
+                                    voipConnection.receiveCall();
                                 }).start();
 
                                 try {
@@ -106,6 +112,44 @@ class ServerMessageCommunicationClass extends Thread {
                                 }
 
                                 stage.close();
+
+                                FXMLLoader callWindowLoader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
+                                Parent rootForCallWindow = null;
+                                try {
+                                    rootForCallWindow = callWindowLoader.load();
+                                } catch (IOException e) {
+                                    System.out.println("Exception in CONNECT request:MessageCommunicationClass");
+                                    System.out.println(e);
+                                }
+                                Stage stageForCallWindow = new Stage();
+                                stageForCallWindow.setTitle("Połączenie");
+                                Scene sceneForCallWindow = new Scene(rootForCallWindow);
+                                sceneForCallWindow.getStylesheets().add("sample/style.css");
+                                stageForCallWindow.setScene(sceneForCallWindow);
+
+                                CallWindowController controller = callWindowLoader.getController();
+                                //Ta funkcja szuka w bazie podanej nazwy, musimy mieć funkcje co przerabia ip na odpowiadający mu nick z bazy
+                                //controller.setTargetUser(clientCommunicationSocket.getInetAddress().getHostAddress());
+                                controller.setTargetUser("Testoviron");
+
+
+                                stageForCallWindow.setOnCloseRequest(eventForCallWindow -> {
+                                    System.out.println("Zakończenie połączenia");
+
+                                    //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
+                                    MainController.voipConnection.stopServer();
+                                    MessageCommunicationClientClass messageClient = new MessageCommunicationClientClass(clientCommunicationSocket.getInetAddress().getHostAddress(),8888);
+                                    messageClient.startMsgClient();
+                                    messageClient.sendMessage("CLOSE_WINDOW");
+                                    MainController.voipConnection.stopCapture();
+                                    messageClient.closeMsgClient();
+
+
+                                });
+
+                                stageForCallWindow.show();
+
+
                             });
 
                             connectionWindowController.rejectCallButton.setOnAction((event) -> {
@@ -146,8 +190,19 @@ class ServerMessageCommunicationClass extends Thread {
                         //clientCommunicationDataOutput.write("221 Thank you for using NiceFTP\n",0,"221 Thank you for using NiceFTP\n".length());
                         //clientCommunicationDataOutput.flush();
                         System.out.println("Komenda Rozłącz");
-                        MainController.voipConnection.stopServer();
-                        MainController.voipConnection.stopCapture();
+                        voipConnection.stopServer();
+                        voipConnection.stopCapture();
+
+                    }
+                    break;
+                    case "CLOSE_WINDOW":
+                    {
+                        Platform.runLater(() ->{
+                            MainController.callWindowStage.close();
+                            voipConnection.stopServer();
+                            voipConnection.stopCapture();
+                            MainController.mainMessageClient.closeMsgClient();
+                        });
 
                     }
                     break;

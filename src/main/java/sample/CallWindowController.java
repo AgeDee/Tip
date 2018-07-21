@@ -13,7 +13,7 @@ public class CallWindowController {
     @FXML
     WebView avatarView;
 
-    String targetUserLogin;
+    public String targetUserLogin;
     int targetUserId;
 
     UserDAO userDAO = new UserDAO();

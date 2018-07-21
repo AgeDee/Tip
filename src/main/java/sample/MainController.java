@@ -67,6 +67,12 @@ public class MainController {
     //Utworzenie obiektu voipConnection w celu wywoływania funkcji do połączenia w dalszej czesci programu
     public static VoipConnection voipConnection = new VoipConnection();
 
+    //Statyczne zmienne wykorzystywane w innych klasach programu
+
+    //Wykorzystywana zmienna do zamykania okna gdy te zostanie zamknięte przez naszego rozmówce
+    public static Stage callWindowStage;
+    public static MessageCommunicationClientClass mainMessageClient;
+
     @FXML
     void initialize(){
         setAvatar(AvatarManager.downloadAvatar(userLogin));
@@ -283,6 +289,7 @@ public class MainController {
         //podajemy ip serwera, z którym się łączymy oraz jego port
         MessageCommunicationClientClass messageClient =
                 new MessageCommunicationClientClass("192.168.0.28",8888);
+        mainMessageClient = messageClient;
         messageClient.startMsgClient();
         messageClient.sendMessage("CONNECT");
 
@@ -327,7 +334,7 @@ public class MainController {
                     messageClient.closeMsgClient();
 
                 });
-
+                callWindowStage = stage;
                 stage.show();
             });
 
