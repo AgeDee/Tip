@@ -9,6 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -17,6 +19,8 @@ import java.security.NoSuchAlgorithmException;
 public class LoginController {
 
     private UserDAO userDAO = new UserDAO();
+
+    public static String user_ip = "";
 
     @FXML private TextField userLogin;
     @FXML private PasswordField userPassword;
@@ -36,6 +40,17 @@ public class LoginController {
                 }
                 //else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(userPassword.getText())){
                 else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(passwordHash)) {
+                    //String user_ip = "";
+
+                    try(final DatagramSocket socket = new DatagramSocket()){
+                        socket.connect(InetAddress.getByName("8.8.8.8"), 10002);
+                        user_ip = socket.getLocalAddress().getHostAddress();
+                    }catch(Exception ex){
+                        System.out.println("Exception occured in getting local ip address of user");
+                        System.out.println(ex);
+                    }
+
+                    userDAO.updateUserIpAddressById(userDAO.findByUserLogin(userLogin.getText()).getUserId(),user_ip);
                     System.out.println("Login Success");
                     CurrentUser.setUserLogin(userLogin.getText());
                     Stage stage = (Stage) userLogin.getScene().getWindow();

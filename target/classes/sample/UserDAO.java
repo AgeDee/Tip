@@ -44,6 +44,22 @@ public class UserDAO {
         return user;
     }
 
+    public User findByUserIpAddress(String user_ip){
+        String sql = "SELECT * FROM users WHERE user_ip = :user_ip";
+        SqlParameterSource namedParameters = new MapSqlParameterSource("user_ip", user_ip);
+        User user = (User) jdbc.queryForObject(sql, namedParameters, new UserRowMapper());
+        return user;
+    }
+
+    public void updateUserIpAddressById(int id, String user_ip){
+        String sql = "UPDATE users SET user_ip = :user_ip WHERE id = :id";
+        MapSqlParameterSource namedParameters = new MapSqlParameterSource();
+        namedParameters.addValue("user_ip", user_ip);
+        namedParameters.addValue("id", id);
+        jdbc.update(sql, namedParameters);
+
+    }
+
     public User findByUserLogin(String login){
         String sql = "SELECT * FROM users WHERE login = :login";
         SqlParameterSource namedParameters = new MapSqlParameterSource("login", login);
@@ -111,6 +127,7 @@ class UserRowMapper implements RowMapper<User> {
         user.setLogin(resultSet.getString("login"));
         user.setPassword(resultSet.getString("password"));
         user.setEmail(resultSet.getString("email"));
+        user.setUserIp(resultSet.getString("user_ip"));
 
         return user;
     }

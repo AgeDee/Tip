@@ -108,7 +108,7 @@ public class VoipConnection {
 
         byte tempBuffer[] = new byte[10000];
 
-        String receiverIpAddress = "192.168.0.28";
+        String receiverIpAddress = null;
         int receiverPort = 9999;
 
         CaptureThread(String receiverIpAddress, int receiverPort){
@@ -147,7 +147,7 @@ public class VoipConnection {
     public void receiveCall(){
         try {
             serverStopped = false;
-            appSocket = new DatagramSocket(9999, InetAddress.getByName("192.168.0.28"));
+            appSocket = new DatagramSocket(9999, InetAddress.getByName(LoginController.user_ip));
             //appSocket = new DatagramSocket(9999, InetAddress.getByName("192.168.0.15"));
             byte[] receiveData = new byte[10000];
             while (!serverStopped) {

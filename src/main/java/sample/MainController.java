@@ -72,6 +72,9 @@ public class MainController {
     //Wykorzystywana zmienna do zamykania okna gdy te zostanie zamknięte przez naszego rozmówce
     public static Stage callWindowStage;
     public static MessageCommunicationClientClass mainMessageClient;
+    public static String recipientIp;
+
+
 
     @FXML
     void initialize(){
@@ -91,7 +94,7 @@ public class MainController {
             System.out.println("Thread started!!!!!");
             try {
                 MessageCommunicationClass messageServer = new MessageCommunicationClass();
-                messageServer.startMsgServer("192.168.0.28", 8888);
+                messageServer.startMsgServer(LoginController.user_ip, 8888);
                 //messageServer.startMsgServer("192.168.0.15", 8888);
             }catch (Exception ex){
                 System.out.println("Błąd w funkcji MainController::initialize()");
@@ -106,6 +109,8 @@ public class MainController {
     @FXML
     void logoutAction() throws IOException {
         System.out.println("Wyloguj");
+
+        userDAO.updateUserIpAddressById(userDAO.findByUserLogin(userLogin).getUserId(),null);
 
         Stage stage = (Stage) userText.getScene().getWindow();
         stage.close();
@@ -233,6 +238,8 @@ public class MainController {
         if (contactsList.getSelectionModel().getSelectedIndex() != -1) {
 
             String selectedUser = contactsList.getSelectionModel().getSelectedItem();
+            recipientIp = userDAO.findByUserLogin(selectedUser).getUserIp();
+            System.out.println("Recipient IP:" + recipientIp);
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("callToUser.fxml"));
             Parent root = loader.load();
@@ -244,6 +251,7 @@ public class MainController {
 
             CallToUserController callToUserController = loader.getController();
             callToUserController.setInfomrationalText(selectedUser);
+
 
 //            stage.setOnShowing(new EventHandler<WindowEvent>() {
 //                @Override
@@ -288,7 +296,7 @@ public class MainController {
         //Tworzymy clienta do wymiany komunikatów z serwerem, w konstruktorze
         //podajemy ip serwera, z którym się łączymy oraz jego port
         MessageCommunicationClientClass messageClient =
-                new MessageCommunicationClientClass("192.168.0.28",8888);
+                new MessageCommunicationClientClass(recipientIp,8888);
         mainMessageClient = messageClient;
         messageClient.startMsgClient();
         messageClient.sendMessage("CONNECT");
@@ -301,7 +309,7 @@ public class MainController {
                 voipConnection.receiveCall();
             }).start();
 
-            voipConnection.captureAudio("192.168.0.28",9999);
+            voipConnection.captureAudio(recipientIp,9999);
 
             Platform.runLater(() -> {
                 stageToClose.close();

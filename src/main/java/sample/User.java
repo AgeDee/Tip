@@ -6,6 +6,7 @@ public class User {
     private String login;
     private String password;
     private String email;
+    private String user_ip;
 
     public User(){}
 
@@ -16,6 +17,7 @@ public class User {
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
+                ", user_ip='" + user_ip + '\'' +
                 '}';
     }
 
@@ -56,5 +58,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getUserIp() {
+        return user_ip;
+    }
+
+    public void setUserIp(String user_ip) {
+        this.user_ip = user_ip;
     }
 }

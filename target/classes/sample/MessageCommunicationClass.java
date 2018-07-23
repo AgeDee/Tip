@@ -36,6 +36,8 @@ public class MessageCommunicationClass {
 
 
 class ServerMessageCommunicationClass extends Thread {
+    UserDAO userDAO = new UserDAO();
+
     Socket clientCommunicationSocket;
     InputStreamReader clientCommunicationMessageInput;
     OutputStreamWriter clientCommunicationMessageOutput;
@@ -54,6 +56,7 @@ class ServerMessageCommunicationClass extends Thread {
             commandReader = new BufferedReader(clientCommunicationMessageInput);
             clientCommunicationMessageOutput =
                     new OutputStreamWriter(clientCommunicationSocket.getOutputStream(), "UTF-8");
+            MainController.recipientIp = connectedSocket.getInetAddress().getHostAddress();
 
 
             start();
@@ -130,7 +133,7 @@ class ServerMessageCommunicationClass extends Thread {
                                 CallWindowController controller = callWindowLoader.getController();
                                 //Ta funkcja szuka w bazie podanej nazwy, musimy mieć funkcje co przerabia ip na odpowiadający mu nick z bazy
                                 //controller.setTargetUser(clientCommunicationSocket.getInetAddress().getHostAddress());
-                                controller.setTargetUser("Testoviron");
+                                controller.setTargetUser(userDAO.findByUserIpAddress(MainController.recipientIp).getLogin());
 
 
                                 stageForCallWindow.setOnCloseRequest(eventForCallWindow -> {
@@ -146,7 +149,7 @@ class ServerMessageCommunicationClass extends Thread {
 
 
                                 });
-
+                                MainController.callWindowStage = stageForCallWindow;
                                 stageForCallWindow.show();
 
 
@@ -189,18 +192,23 @@ class ServerMessageCommunicationClass extends Thread {
                     {
                         //clientCommunicationDataOutput.write("221 Thank you for using NiceFTP\n",0,"221 Thank you for using NiceFTP\n".length());
                         //clientCommunicationDataOutput.flush();
-                        System.out.println("Komenda Rozłącz");
-                        voipConnection.stopServer();
-                        voipConnection.stopCapture();
+                        Platform.runLater(() ->{
+                            System.out.println("Komenda Rozłącz");
+                            MainController.callWindowStage.close();
+                            voipConnection.stopServer();
+                            voipConnection.stopCapture();
+                        });
 
                     }
                     break;
                     case "CLOSE_WINDOW":
                     {
-                        MainController.callWindowStage.close();
-                        voipConnection.stopServer();
-                        voipConnection.stopCapture();
-                        MainController.mainMessageClient.closeMsgClient();
+                        Platform.runLater(() ->{
+                            MainController.callWindowStage.close();
+                            voipConnection.stopServer();
+                            voipConnection.stopCapture();
+                            MainController.mainMessageClient.closeMsgClient();
+                        });
 
                     }
                     break;
