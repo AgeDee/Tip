@@ -14,7 +14,7 @@
             <WebView fx:id="avatarView" prefHeight="150.0" prefWidth="150.0" />
          </children>
       </HBox>
-      <Text layoutX="158.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Czas rozmowy: 00:12:43" />
+      <Text fx:id="conversationTime" layoutX="154.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Czas rozmowy: 00:00:00" wrappingWidth="133.71875" />
       <HBox alignment="CENTER" layoutX="121.0" layoutY="191.0" prefHeight="44.0" prefWidth="200.0">
          <children>
             <Text fx:id="targetUserText" strokeType="OUTSIDE" strokeWidth="0.0" text="error">
@@ -26,7 +26,7 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="121.0" layoutY="235.0" prefHeight="53.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" style="-fx-background-color: red;" text="Rozłącz" />
+            <Button fx:id="endCallButton" mnemonicParsing="false" style="-fx-background-color: red;" text="Rozłącz" />
          </children>
       </HBox>
    </children>

@@ -241,16 +241,18 @@ public class MainController {
             recipientIp = userDAO.findByUserLogin(selectedUser).getUserIp();
             System.out.println("Recipient IP:" + recipientIp);
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("callToUser.fxml"));
-            Parent root = loader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Łączę ...");
-            Scene scene = new Scene(root);
-            scene.getStylesheets().add("sample/style.css");
-            stage.setScene(scene);
+            if(recipientIp != null) {
 
-            CallToUserController callToUserController = loader.getController();
-            callToUserController.setInfomrationalText(selectedUser);
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("callToUser.fxml"));
+                Parent root = loader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Łączę ...");
+                Scene scene = new Scene(root);
+                scene.getStylesheets().add("sample/style.css");
+                stage.setScene(scene);
+
+                CallToUserController callToUserController = loader.getController();
+                callToUserController.setInfomrationalText(selectedUser);
 
 
 //            stage.setOnShowing(new EventHandler<WindowEvent>() {
@@ -268,17 +270,25 @@ public class MainController {
 //                }
 //            });
 
-            new Thread(() -> {
+                new Thread(() -> {
 
-                try {
+                    try {
                         handleConnection(stage);
-                    }catch(Exception ex){
+                    } catch (Exception ex) {
                         System.out.println("Exception in Stage::setOnShowing connectAction class");
                         System.out.println(ex);
                     }
-            }).start();
+                }).start();
 
-            stage.show();
+                stage.show();
+            }
+            else{
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Niepowodzenie");
+                alert.setTitle("Nie można połączyć");
+                alert.setContentText("Użytkownik nie jest aktualnie zalogowany");
+                alert.showAndWait();
+            }
 
 
 
@@ -316,6 +326,7 @@ public class MainController {
                 String selectedUser = contactsList.getSelectionModel().getSelectedItem();
 
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
+                ServerMessageCommunicationClass.loaderOfCallWindow = loader;
                 Parent root = null;
                 try {
                     root = loader.load();
@@ -331,9 +342,23 @@ public class MainController {
 
                 CallWindowController controller = loader.getController();
                 controller.setTargetUser(selectedUser);
+                controller.startTimer();
+
+                controller.endCallButton.setOnAction(e -> {
+                    stage.close();
+                    controller.stopTimer();
+
+                    //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
+                    voipConnection.stopServer();
+                    messageClient.sendMessage("DISCONNECT");
+                    voipConnection.stopCapture();
+                    messageClient.closeMsgClient();
+                });
 
                 stage.setOnCloseRequest(event -> {
                     System.out.println("Zakończenie połączenia");
+
+                    controller.stopTimer();
 
                     //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
                     voipConnection.stopServer();
@@ -342,6 +367,9 @@ public class MainController {
                     messageClient.closeMsgClient();
 
                 });
+
+
+
                 callWindowStage = stage;
                 stage.show();
             });

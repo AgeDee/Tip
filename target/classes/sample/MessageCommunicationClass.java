@@ -13,6 +13,7 @@ import java.io.OutputStreamWriter;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.List;
 
 import static sample.MainController.mainMessageClient;
 import static sample.MainController.voipConnection;
@@ -37,6 +38,7 @@ public class MessageCommunicationClass {
 
 class ServerMessageCommunicationClass extends Thread {
     UserDAO userDAO = new UserDAO();
+    BlockedUserDAO blockedUserDAO = new BlockedUserDAO();
 
     Socket clientCommunicationSocket;
     InputStreamReader clientCommunicationMessageInput;
@@ -45,6 +47,9 @@ class ServerMessageCommunicationClass extends Thread {
     BufferedReader commandReader;
 
     private boolean exit = false;
+
+    //Loader okna rozmowy potrzebny do zatrzymania timera
+    public static FXMLLoader loaderOfCallWindow;
 
 
 
@@ -83,98 +88,136 @@ class ServerMessageCommunicationClass extends Thread {
 //                        String messageToSend = "OK" + "\n";
 //                        clientCommunicationMessageOutput.write(messageToSend,0,messageToSend.length());
 //                        clientCommunicationMessageOutput.flush();
-                        Platform.runLater(() -> {
+                        boolean ifRejected = false;
 
-                        try {
-
-                            //Otwieranie okna informującego o tym, że ktoś dzwoni
-                            FXMLLoader loader = new FXMLLoader(getClass().getResource("connectionWindow.fxml"));
-                            Parent root = loader.load();
-                            Stage stage = new Stage();
-                            stage.setTitle("Próba połączenia");
-                            Scene scene = new Scene(root);
-                            scene.getStylesheets().add("sample/style.css");
-                            stage.setScene(scene);
-
-                            ConnectionWindowController connectionWindowController = loader.getController();
-
-                            //Akcja na przyciśnięcie Buttona "Odbierz"
-                            connectionWindowController.getCallButton.setOnAction((event) -> {
-                                //Uruchamiamy server voip
-                                new Thread(() -> {
-                                    System.out.println("Voip Server started!!!");
-                                    voipConnection.receiveCall();
-                                }).start();
-
-                                try {
-                                    String messageToSend = "OK" + "\n";
-                                    clientCommunicationMessageOutput.write(messageToSend, 0, messageToSend.length());
-                                    clientCommunicationMessageOutput.flush();
-                                } catch (IOException ex) {
-                                    System.out.println("Exception in ServerMessageCommunicationClass:: CONNECT message");
-                                }
-
-                                stage.close();
-
-                                FXMLLoader callWindowLoader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
-                                Parent rootForCallWindow = null;
-                                try {
-                                    rootForCallWindow = callWindowLoader.load();
-                                } catch (IOException e) {
-                                    System.out.println("Exception in CONNECT request:MessageCommunicationClass");
-                                    System.out.println(e);
-                                }
-                                Stage stageForCallWindow = new Stage();
-                                stageForCallWindow.setTitle("Połączenie");
-                                Scene sceneForCallWindow = new Scene(rootForCallWindow);
-                                sceneForCallWindow.getStylesheets().add("sample/style.css");
-                                stageForCallWindow.setScene(sceneForCallWindow);
-
-                                CallWindowController controller = callWindowLoader.getController();
-                                //Ta funkcja szuka w bazie podanej nazwy, musimy mieć funkcje co przerabia ip na odpowiadający mu nick z bazy
-                                //controller.setTargetUser(clientCommunicationSocket.getInetAddress().getHostAddress());
-                                controller.setTargetUser(userDAO.findByUserIpAddress(MainController.recipientIp).getLogin());
-
-
-                                stageForCallWindow.setOnCloseRequest(eventForCallWindow -> {
-                                    System.out.println("Zakończenie połączenia");
-
-                                    //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
-                                    MainController.voipConnection.stopServer();
-                                    MessageCommunicationClientClass messageClient = new MessageCommunicationClientClass(clientCommunicationSocket.getInetAddress().getHostAddress(),8888);
-                                    messageClient.startMsgClient();
-                                    messageClient.sendMessage("CLOSE_WINDOW");
-                                    MainController.voipConnection.stopCapture();
-                                    messageClient.closeMsgClient();
-
-
-                                });
-                                MainController.callWindowStage = stageForCallWindow;
-                                stageForCallWindow.show();
-
-
-                            });
-
-                            connectionWindowController.rejectCallButton.setOnAction((event) -> {
-                                try {
-                                    String messageToSend = "REJECT" + "\n";
-                                    clientCommunicationMessageOutput.write(messageToSend, 0, messageToSend.length());
-                                    clientCommunicationMessageOutput.flush();
-                                } catch (IOException ex) {
-                                    System.out.println("Exception in ServerMessageCommunicationClass:: CONNECT message");
-                                }
-
-                                stage.close();
-                            });
-
-
-                            stage.show();
-
-                        }catch(Exception ex){
-                            System.out.println("Exception in ServerMessageCommunication:CONNECT");
-                            System.out.println(ex);
+                        List<BlockedUser> blockedUsersResult = blockedUserDAO.getByUserId(userDAO.findByUserIpAddress(LoginController.user_ip).getUserId());
+                        for(BlockedUser u : blockedUsersResult){
+                            if(u.getBlockedId() == userDAO.findByUserIpAddress(MainController.recipientIp).getUserId()){
+                                ifRejected = true;
+                            }
                         }
-                        });
+
+
+                        if(!ifRejected) {
+                            Platform.runLater(() -> {
+
+                                try {
+
+                                    //Otwieranie okna informującego o tym, że ktoś dzwoni
+                                    FXMLLoader loader = new FXMLLoader(getClass().getResource("connectionWindow.fxml"));
+                                    Parent root = loader.load();
+                                    Stage stage = new Stage();
+                                    stage.setTitle("Próba połączenia");
+                                    Scene scene = new Scene(root);
+                                    scene.getStylesheets().add("sample/style.css");
+                                    stage.setScene(scene);
+
+                                    ConnectionWindowController connectionWindowController = loader.getController();
+                                    connectionWindowController.setCallerLogin(userDAO.findByUserIpAddress(MainController.recipientIp).getLogin());
+
+                                    //Akcja na przyciśnięcie Buttona "Odbierz"
+                                    connectionWindowController.getCallButton.setOnAction((event) -> {
+                                        //Uruchamiamy server voip
+                                        new Thread(() -> {
+                                            System.out.println("Voip Server started!!!");
+                                            voipConnection.receiveCall();
+                                        }).start();
+
+                                        try {
+                                            String messageToSend = "OK" + "\n";
+                                            clientCommunicationMessageOutput.write(messageToSend, 0, messageToSend.length());
+                                            clientCommunicationMessageOutput.flush();
+                                        } catch (IOException ex) {
+                                            System.out.println("Exception in ServerMessageCommunicationClass:: CONNECT message");
+                                        }
+
+                                        stage.close();
+
+                                        FXMLLoader callWindowLoader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
+                                        loaderOfCallWindow = callWindowLoader;
+                                        Parent rootForCallWindow = null;
+                                        try {
+                                            rootForCallWindow = callWindowLoader.load();
+                                        } catch (IOException e) {
+                                            System.out.println("Exception in CONNECT request:MessageCommunicationClass");
+                                            System.out.println(e);
+                                        }
+                                        Stage stageForCallWindow = new Stage();
+                                        stageForCallWindow.setTitle("Połączenie");
+                                        Scene sceneForCallWindow = new Scene(rootForCallWindow);
+                                        sceneForCallWindow.getStylesheets().add("sample/style.css");
+                                        stageForCallWindow.setScene(sceneForCallWindow);
+
+                                        CallWindowController controller = callWindowLoader.getController();
+                                        //Ta funkcja szuka w bazie podanej nazwy, musimy mieć funkcje co przerabia ip na odpowiadający mu nick z bazy
+                                        //controller.setTargetUser(clientCommunicationSocket.getInetAddress().getHostAddress());
+                                        controller.setTargetUser(userDAO.findByUserIpAddress(MainController.recipientIp).getLogin());
+                                        controller.startTimer();
+
+                                        controller.endCallButton.setOnAction(e -> {
+                                            stageForCallWindow.close();
+
+                                            controller.stopTimer();
+
+                                            //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
+                                            MainController.voipConnection.stopServer();
+                                            MessageCommunicationClientClass messageClient = new MessageCommunicationClientClass(clientCommunicationSocket.getInetAddress().getHostAddress(), 8888);
+                                            messageClient.startMsgClient();
+                                            messageClient.sendMessage("CLOSE_WINDOW");
+                                            MainController.voipConnection.stopCapture();
+                                            messageClient.closeMsgClient();
+                                        });
+
+                                        stageForCallWindow.setOnCloseRequest(eventForCallWindow -> {
+                                            System.out.println("Zakończenie połączenia");
+
+                                            controller.stopTimer();
+
+                                            //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
+                                            MainController.voipConnection.stopServer();
+                                            MessageCommunicationClientClass messageClient = new MessageCommunicationClientClass(clientCommunicationSocket.getInetAddress().getHostAddress(), 8888);
+                                            messageClient.startMsgClient();
+                                            messageClient.sendMessage("CLOSE_WINDOW");
+                                            MainController.voipConnection.stopCapture();
+                                            messageClient.closeMsgClient();
+
+
+                                        });
+                                        MainController.callWindowStage = stageForCallWindow;
+                                        stageForCallWindow.show();
+
+
+                                    });
+
+                                    connectionWindowController.rejectCallButton.setOnAction((event) -> {
+                                        try {
+                                            String messageToSend = "REJECT" + "\n";
+                                            clientCommunicationMessageOutput.write(messageToSend, 0, messageToSend.length());
+                                            clientCommunicationMessageOutput.flush();
+                                        } catch (IOException ex) {
+                                            System.out.println("Exception in ServerMessageCommunicationClass:: CONNECT message");
+                                        }
+
+                                        stage.close();
+                                    });
+
+
+                                    stage.show();
+
+                                } catch (Exception ex) {
+                                    System.out.println("Exception in ServerMessageCommunication:CONNECT");
+                                    System.out.println(ex);
+                                }
+                            });
+                        } else{
+                            try {
+                                String messageToSend = "REJECT" + "\n";
+                                clientCommunicationMessageOutput.write(messageToSend, 0, messageToSend.length());
+                                clientCommunicationMessageOutput.flush();
+                            } catch (IOException ex) {
+                                System.out.println("Exception in ServerMessageCommunicationClass:: blocked user rejected message");
+                            }
+                        }
 
                     }
                     break;
@@ -194,6 +237,8 @@ class ServerMessageCommunicationClass extends Thread {
                         //clientCommunicationDataOutput.flush();
                         Platform.runLater(() ->{
                             System.out.println("Komenda Rozłącz");
+                            CallWindowController callWindowController = loaderOfCallWindow.getController();
+                            callWindowController.stopTimer();
                             MainController.callWindowStage.close();
                             voipConnection.stopServer();
                             voipConnection.stopCapture();
@@ -204,6 +249,8 @@ class ServerMessageCommunicationClass extends Thread {
                     case "CLOSE_WINDOW":
                     {
                         Platform.runLater(() ->{
+                            CallWindowController callWindowController = loaderOfCallWindow.getController();
+                            callWindowController.stopTimer();
                             MainController.callWindowStage.close();
                             voipConnection.stopServer();
                             voipConnection.stopCapture();

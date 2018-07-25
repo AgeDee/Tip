@@ -28,6 +28,10 @@ public class ConnectionWindowController {
 //
 //    }
 
+    public void setCallerLogin(String callerLogin){
+        callerNameText.setText(callerLogin + " dzwoni");
+    }
+
 
 
 
