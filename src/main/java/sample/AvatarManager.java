@@ -45,7 +45,7 @@ public class AvatarManager {
         Map uploadResult = cloudinary.uploader().upload(image, params);
 
         String avatarUrl = uploadResult.values().toArray()[3].toString();
-        //System.out.println(avatarUrl);
+
 
         return avatarUrl;
     }

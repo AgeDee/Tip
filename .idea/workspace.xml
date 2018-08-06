@@ -1,17 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Projekt_TIP" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e00714d1-da39-458d-bbd2-3b450ebe472c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/CallWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/CallWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/callWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/callWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/ConnectionWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/ConnectionWindowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/ConnectionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/ConnectionWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/MessageCommunicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/MessageCommunicationClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/ServerMessageCommunicationClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/ServerMessageCommunicationClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/Projekt_TIP.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/Projekt_TIP.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/app/Projekt_TIP.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/app/Projekt_TIP.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/msvcp120.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/msvcr120.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/packager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/awt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/bci.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/dcpr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/decora_sse.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/dt_socket.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/fontmanager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/fxplugins.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/glass.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/glib-lite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/gstreamer-lite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/instrument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/j2pcsc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jaas_nt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/java.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javaaccessbridge.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javafx_font.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javafx_font_t2k.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javafx_iio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javajpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jawt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jdwp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jfxmedia.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jfxwebkit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jimage.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jli.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jsound.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jsoundds.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/kcms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/lcms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/management.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/management_agent.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/management_ext.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/mlib_image.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/msvcp120.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/msvcr120.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/nio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/prefs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/prism_common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/prism_d3d.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/prism_sw.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/rmi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/server/jvm.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/splashscreen.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/sunec.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/t2k.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/verify.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/w2k_lsa_auth.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/windowsaccessbridge-64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/zip.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/management/jmxremote.access" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/management/jmxremote.password.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/management/management.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/net.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/java.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/java.security" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/limited/default_US_export.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/limited/default_local.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/limited/exempt_local.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/unlimited/default_US_export.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/unlimited/default_local.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/sound.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/classfile_constants.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jawt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jdwpTransport.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jni.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jvmti.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jvmticmlr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/bridge/AccessBridgeCallbacks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/bridge/AccessBridgeCalls.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/bridge/AccessBridgePackages.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/jawt_md.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/jni_md.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/aes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/asm.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/cldr.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/icu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/public_suffix.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/zlib.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.compiler/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.compiler/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.datatransfer/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.datatransfer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/colorimaging.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/giflib.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/harfbuzz.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/jpeg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/lcms.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/libpng.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/mesa3d.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/opengl.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.instrument/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.instrument/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.logging/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.logging/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.management.rmi/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.management.rmi/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.management/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.management/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.naming/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.naming/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.prefs/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.prefs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.rmi/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.rmi/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.scripting/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.scripting/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.security.jgss/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.security.jgss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.security.sasl/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.security.sasl/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.smartcardio/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.smartcardio/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.sql.rowset/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.sql.rowset/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.sql/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.sql/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml.crypto/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml.crypto/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml.crypto/santuario.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/bcel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/dom.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/jcup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/xalan.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/xerces.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/xmlresolver.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.base/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.base/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.controls/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.controls/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.fxml/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.fxml/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.graphics/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.graphics/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.graphics/icu_v51.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.graphics/jpeg_v7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/applecoreaudio.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/glib.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/gstreamer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/libffi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.swing/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.swing/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/icu_v48.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/libxml2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/libxslt.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/webkit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.accessibility/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.accessibility/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.charsets/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.charsets/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.crypto.ec/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.crypto.ec/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.crypto.ec/ecc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.dynalink/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.dynalink/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.dynalink/dynalink.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.httpserver/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.httpserver/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jdwp.agent/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jdwp.agent/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jfr/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jfr/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jsobject/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jsobject/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.localedata/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.localedata/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.localedata/cldr.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.localedata/thaidict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.management.agent/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.management.agent/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.management/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.management/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.naming.dns/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.naming.dns/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.naming.rmi/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.naming.rmi/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.net/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.net/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.packager.services/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.packager.services/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.scripting.nashorn/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.scripting.nashorn/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.scripting.nashorn/double-conversion.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.scripting.nashorn/joni.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.sctp/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.sctp/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.security.auth/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.security.auth/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.security.jgss/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.security.jgss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.unsupported/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.unsupported/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.xml.dom/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.xml.dom/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.zipfs/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.zipfs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/classlist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fontconfig.bfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fontconfig.properties.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaBrightDemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaBrightDemiItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaBrightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaBrightRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaSansDemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaSansRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaTypewriterBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaTypewriterRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/javafx-swt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/javafx.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jawt.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jfr/default.jfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jfr/profile.jfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jrt-fs.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jvm.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jvm.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/modules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/psfont.properties.ja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/psfontj2d.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/blacklist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/blacklisted.certs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/cacerts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/default.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/public_suffix_list.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/trusted.libraries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/server/Xusage.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/tzdb.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/tzmappings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/release" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,15 +271,29 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+            <state relative-caret-position="1717">
+              <caret line="118" column="21" selection-start-line="112" selection-start-column="8" selection-end-line="118" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14740#14741#0" expanded="true" />
-                <element signature="e#14789#14790#0" expanded="true" />
-                <element signature="e#14818#14819#0" expanded="true" />
-                <element signature="e#14865#14866#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CurrentUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/CurrentUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockedUserDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -42,8 +301,8 @@
       <file leaf-file-name="VoipConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="142" column="9" lean-forward="true" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
+            <state relative-caret-position="2278">
+              <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,8 +313,8 @@
       <file leaf-file-name="MessageCommunicationClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2914">
-              <caret line="211" column="25" lean-forward="true" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
+            <state relative-caret-position="952">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,68 +322,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/UserDAO.java">
+      <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="54" column="72" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="72" />
+            <state relative-caret-position="544">
+              <caret line="42" selection-start-line="42" selection-end-line="46" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionsLogDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java">
+      <file leaf-file-name="SettingsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/SettingsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+            <state relative-caret-position="782">
+              <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlockedUserDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
+      <file leaf-file-name="TermsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/TermsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CallWindowController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallWindowController.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="136">
+              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
               <folding>
-                <element signature="e#2481#2482#0" expanded="true" />
-                <element signature="e#2510#2511#0" expanded="true" />
-                <element signature="e#2540#2541#0" expanded="true" />
-                <element signature="e#2568#2569#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="callWindow.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/callWindow.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-494">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+            <state relative-caret-position="500">
+              <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -158,6 +399,7 @@
       <find>CallWindow</find>
       <find>Wyk</find>
       <find>Wykryt</find>
+      <find>log</find>
     </findStrings>
     <replaceStrings>
       <replace>contact</replace>
@@ -169,10 +411,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/sample/login.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/DBUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/settingsController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/registerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/loginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/mainController.java" />
@@ -187,7 +427,6 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/SearchController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/main.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/BlockedUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/BlockedUsersController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/SettingsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/settings.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/ConnectionLog.java" />
@@ -201,15 +440,19 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClientClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/connectionWindow.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/callToUser.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/CallToUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/VoipConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/AvatarManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/BlockedUsersController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/CallToUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/CallWindowController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/VoipConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/login.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/LoginController.java" />
       </list>
     </option>
   </component>
@@ -230,8 +473,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="11" />
+    <option name="y" value="42" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
@@ -243,6 +486,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -250,6 +495,11 @@
             <path>
               <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
@@ -293,6 +543,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="ConnectionsLogDAO.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="ContactDAO.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="MessageCommunicationClass.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
@@ -306,18 +574,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/sample" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -442,7 +708,13 @@
       <workItem from="1531953735533" duration="983000" />
       <workItem from="1532124149138" duration="8858000" />
       <workItem from="1532366902999" duration="13569000" />
-      <workItem from="1532544706438" duration="13929000" />
+      <workItem from="1532544706438" duration="15003000" />
+      <workItem from="1532561515922" duration="1462000" />
+      <workItem from="1532563026781" duration="111000" />
+      <workItem from="1532588193912" duration="3330000" />
+      <workItem from="1532597554137" duration="1301000" />
+      <workItem from="1533592970729" duration="3250000" />
+      <workItem from="1533596811852" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="registration added">
       <created>1526933279245</created>
@@ -469,15 +741,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164366000" />
+    <option name="totallyTimeSpent" value="174936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32827586" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32776618" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -485,13 +756,13 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30167013" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3008299" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17254686" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17254686" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -559,20 +830,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java</url>
-          <line>149</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sample/MainController.java</url>
-          <line>322</line>
+          <line>317</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sample/MainController.java</url>
-          <line>294</line>
+          <line>289</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -581,133 +846,47 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Contact.java" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/CurrentUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.base/javafx/beans/NamedArg.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/stage/WindowEvent.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="46" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/SettingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.controls/javafx/scene/control/TableView.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/logRow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://[bazaTip]consoles\bazaTip" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ContactDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/ThreadGroup.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Thread.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUsersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/AvatarManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClientClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallToUserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="2227">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.base/javafx/beans/NamedArg.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/stage/WindowEvent.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.controls/javafx/scene/control/TableView.java" />
+    <entry file="db://[bazaTip]consoles\bazaTip" />
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/ThreadGroup.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -715,60 +894,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/connectionWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="54" column="72" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/AvatarManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallToUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-263">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
+        <state relative-caret-position="1301">
           <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/callWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallWindowController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#2481#2482#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="28" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="142" column="9" lean-forward="true" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-76">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ContactDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+        <state relative-caret-position="315">
+          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -779,17 +992,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/logRow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClientClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="42" selection-start-line="42" selection-end-line="46" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/SettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/TermsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2914">
-          <caret line="211" column="25" lean-forward="true" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
+        <state relative-caret-position="952">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/CurrentUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -798,22 +1080,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+        <state relative-caret-position="1717">
+          <caret line="118" column="21" selection-start-line="112" selection-start-column="8" selection-end-line="118" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#14740#14741#0" expanded="true" />
-            <element signature="e#14789#14790#0" expanded="true" />
-            <element signature="e#14818#14819#0" expanded="true" />
-            <element signature="e#14865#14866#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="54" column="72" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="72" />
+        <state relative-caret-position="500">
+          <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -823,10 +1101,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Projekt_TIP</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

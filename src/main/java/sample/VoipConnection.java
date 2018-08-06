@@ -123,15 +123,13 @@ public class VoipConnection {
             byteOutputStreamClient = new ByteArrayOutputStream();
             stopaudioCapture = false;
             try {
-                //DatagramSocket clientSocket = new DatagramSocket(8786);
-                //DatagramSocket clientSocket = new DatagramSocket(8786, InetAddress.getByName("127.0.0.1"));
-                //appSocket = new DatagramSocket(8786, InetAddress.getByName("127.0.0.1"));
+
                 InetAddress IPAddress = InetAddress.getByName(receiverIpAddress);
                 while (!stopaudioCapture) {
                     int cnt = targetDataLineClient.read(tempBuffer, 0, tempBuffer.length);
                     if (cnt > 0) {
                         DatagramPacket sendPacket = new DatagramPacket(tempBuffer, tempBuffer.length, IPAddress, receiverPort);
-                        //clientSocket.send(sendPacket);
+
                         appSocket.send(sendPacket);
                         byteOutputStreamClient.write(tempBuffer, 0, cnt);
                     }

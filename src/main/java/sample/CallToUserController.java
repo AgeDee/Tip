@@ -13,7 +13,7 @@ public class CallToUserController {
 
     @FXML
     void initialize(){
-        //telephoneImage.setImage(new Image("/telephone.png"));
+
     }
 
     public void setInfomrationalText(String userName){

@@ -82,12 +82,7 @@ public class MainController {
         userText.setText(userLogin);
         selectedText.setText("-");
 
-        //Odpalenie funkcji receiveCall() w celu nasłuchiwania na okreslonym ip i porcie
 
-//        new Thread(() -> {
-//            System.out.println("Thread started!!!!");
-//            voipConnection.receiveCall();
-//        }).start();
 
         //Odpalenie servera do komunikacji pomiędzy clientami
         new Thread(() -> {

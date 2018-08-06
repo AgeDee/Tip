@@ -9,7 +9,7 @@
         <module name="Projekt_TIP" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="9">
       <module name="Projekt_TIP" target="1.9" />
     </bytecodeTargetLevel>
   </component>

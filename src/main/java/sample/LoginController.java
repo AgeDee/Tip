@@ -25,6 +25,8 @@ public class LoginController {
     @FXML private TextField userLogin;
     @FXML private PasswordField userPassword;
 
+    String loggedUserName;
+
     @FXML
     public void OnLoginButtonClick() throws IOException, NoSuchAlgorithmException {
         if(userLogin.getLength() != 0) {
@@ -41,6 +43,8 @@ public class LoginController {
                 //else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(userPassword.getText())){
                 else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(passwordHash)) {
                     //String user_ip = "";
+
+                    loggedUserName = userLogin.getText();
 
                     try(final DatagramSocket socket = new DatagramSocket()){
                         socket.connect(InetAddress.getByName("8.8.8.8"), 10002);
@@ -60,6 +64,25 @@ public class LoginController {
                     Scene scene = new Scene(root);
                     scene.getStylesheets().add("sample/style.css");
                     stage.setScene(scene);
+
+                    stage.setOnCloseRequest(event -> {
+                        userDAO.updateUserIpAddressById(userDAO.findByUserLogin(loggedUserName).getUserId(),null);
+
+                        CurrentUser.setUserLogin("");
+                        try {
+                            Parent rootForLoginParent = FXMLLoader.load(getClass().getResource("login.fxml"));
+                            Scene afterCloseScene = new Scene(rootForLoginParent);
+                            afterCloseScene.getStylesheets().add("sample/style.css");
+                            Stage onCloseStage = new Stage();
+                            onCloseStage.setScene(afterCloseScene);
+                            onCloseStage.show();
+                        }catch(IOException exception){
+                            System.out.println("Exception in LoginController:OnCloseRequest");
+                            System.out.println(exception);
+                        }
+
+                    });
+
                     stage.show();
 
                 } else {

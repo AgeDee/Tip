@@ -39,19 +39,6 @@ public class CallWindowController {
 
             private long lastTime = 0;
 
-//            @Override
-//            public void handle(long now) {
-//                if (lastTime != 0) {
-//                    if (now > lastTime + 1_000_000_000) {
-//                        seconds++;
-//                        conversationTime.setText("Czas rozmowy: " + Integer.toString(seconds) + " s"); //Czas rozmowy:
-//                        lastTime = now;
-//                    }
-//                } else {
-//                    lastTime = now;
-//
-//                }
-//            }
 
             @Override
             public void handle(long now) {

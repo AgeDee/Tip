@@ -79,15 +79,6 @@ class ServerMessageCommunicationClass extends Thread {
                 switch (msg) {
                     case "CONNECT":
                     {
-//                        //Uruchamiamy server voip
-//                        new Thread(() -> {
-//                            System.out.println("Voip Server started!!!");
-//                            MainController.voipConnection.receiveCall();
-//                        }).start();
-
-//                        String messageToSend = "OK" + "\n";
-//                        clientCommunicationMessageOutput.write(messageToSend,0,messageToSend.length());
-//                        clientCommunicationMessageOutput.flush();
                         boolean ifRejected = false;
 
                         List<BlockedUser> blockedUsersResult = blockedUserDAO.getByUserId(userDAO.findByUserIpAddress(LoginController.user_ip).getUserId());

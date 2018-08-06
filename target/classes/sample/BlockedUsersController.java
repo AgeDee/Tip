@@ -56,9 +56,7 @@ public class BlockedUsersController {
 
     @FXML
     void closeAction(){
-//        Stage stage = (Stage) closeButton.getScene().getWindow();
-//        stage.close();
-        //zastąpiono w inicie
+
     }
 
     void addResultItem(String name){

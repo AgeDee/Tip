@@ -18,8 +18,8 @@
             </font>
          </Text>
          <Label layoutX="35.0" layoutY="97.0" text="Login:" />
-         <TextField fx:id="userLogin" layoutX="111.0" layoutY="93.0" prefHeight="25.0" prefWidth="225.0" promptText="login" text="marian_p" />
+         <TextField fx:id="userLogin" layoutX="111.0" layoutY="93.0" prefHeight="25.0" prefWidth="225.0" promptText="login" text="" />
          <Label layoutX="35.0" layoutY="143.0" text="Hasło:" />
-      <PasswordField fx:id="userPassword" layoutX="111.0" layoutY="139.0" prefHeight="25.0" prefWidth="225.0" promptText="hasło" text="aaa" />
+      <PasswordField fx:id="userPassword" layoutX="111.0" layoutY="139.0" prefHeight="25.0" prefWidth="225.0" promptText="hasło" text="" />
       </children>
 </AnchorPane>
