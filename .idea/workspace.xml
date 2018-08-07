@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e00714d1-da39-458d-bbd2-3b450ebe472c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/CallWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/CallWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/callWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/callWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/ConnectionWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/ConnectionWindowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/ConnectionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/ConnectionWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/MessageCommunicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/MessageCommunicationClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/ServerMessageCommunicationClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/ServerMessageCommunicationClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/SettingsController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,18 +15,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+            <state relative-caret-position="221">
+              <caret line="426" selection-start-line="426" selection-end-line="426" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14740#14741#0" expanded="true" />
-                <element signature="e#14789#14790#0" expanded="true" />
-                <element signature="e#14818#14819#0" expanded="true" />
-                <element signature="e#14865#14866#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/SettingsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -42,8 +39,8 @@
       <file leaf-file-name="VoipConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="142" column="9" lean-forward="true" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
+            <state relative-caret-position="2652">
+              <caret line="162" column="78" selection-start-line="162" selection-start-column="78" selection-end-line="162" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,58 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageCommunicationClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2914">
-              <caret line="211" column="25" lean-forward="true" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/UserDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="54" column="72" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionsLogDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockedUserDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CallWindowController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallWindowController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding>
-                <element signature="e#2481#2482#0" expanded="true" />
-                <element signature="e#2510#2511#0" expanded="true" />
-                <element signature="e#2540#2541#0" expanded="true" />
-                <element signature="e#2568#2569#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="callToUser.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/callToUser.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="callWindow.fxml" pinned="false" current-in-tab="false">
@@ -111,20 +60,52 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
+      <file leaf-file-name="connectionWindow.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/connectionWindow.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-494">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="374">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LogController.java">
+      <file leaf-file-name="MessageCommunicationClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+            <state relative-caret-position="3791">
+              <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CallWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallWindowController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1085">
+              <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -188,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/main.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/BlockedUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/BlockedUsersController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/SettingsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/settings.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/ConnectionLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/logRow.java" />
@@ -210,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/CallWindowController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/SettingsController.java" />
       </list>
     </option>
   </component>
@@ -230,10 +211,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="x" value="-9" />
+    <option name="y" value="7" />
+    <option name="width" value="1875" />
+    <option name="height" value="1097" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -243,71 +224,46 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="Tip_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip_2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="Tip_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="Tip_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="Tip_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="Tip_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="BlockedUserDAO.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="MessageCommunicationClass.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,44 +425,68 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164366000" />
+    <option name="totallyTimeSpent" value="165763000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32827586" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.33944955" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30167013" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17254686" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986207" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="DB Browser" order="2" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32827586" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32943678" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3018066" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986207" />
-      <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.33944955" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32896462" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="DB Browser" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17254686" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.33944955" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986207" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896462" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30167013" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32827586" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info id="Designer" order="2" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.33944955" />
@@ -581,17 +561,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://[bazaTip]consoles\bazaTip" />
     <entry file="db://[bazaTip]consoles\bazaTip" />
     <entry file="db://[bazaTip]consoles\bazaTip" />
     <entry file="db://[bazaTip]consoles\bazaTip" />
@@ -623,13 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="46" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/SettingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -700,11 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,12 +678,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -742,23 +699,10 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#2481#2482#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="142" column="9" lean-forward="true" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
+        <state relative-caret-position="2652">
+          <caret line="162" column="78" selection-start-line="162" selection-start-column="78" selection-end-line="162" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -781,31 +725,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="612">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2914">
-          <caret line="211" column="25" lean-forward="true" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
+        <state relative-caret-position="3791">
+          <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14740#14741#0" expanded="true" />
-            <element signature="e#14789#14790#0" expanded="true" />
-            <element signature="e#14818#14819#0" expanded="true" />
-            <element signature="e#14865#14866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -814,6 +744,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="54" column="72" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/SettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/callToUser.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/CallWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="426" selection-start-line="426" selection-end-line="426" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

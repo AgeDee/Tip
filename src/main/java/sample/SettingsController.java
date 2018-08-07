@@ -12,6 +12,8 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SettingsController {
 
@@ -45,10 +47,32 @@ public class SettingsController {
         fileChooser.getExtensionFilters().add(filter);
         File file = fileChooser.showOpenDialog(new Stage());
 
+        List<String> extensions = new ArrayList<>();
+
+        extensions.add("png");
+        extensions.add("jpg");
+        extensions.add("jpeg");
+        extensions.add("bmp");
+        extensions.add("gif");
+
         if(file != null) {
-            AvatarManager.uploadAvatar(file, userLogin);
-            setAvatar(AvatarManager.downloadAvatar(userLogin));
-            System.out.println("Ustawiono nowy avatar");
+            //sprawdzanie czy jpg
+            String parts[] = file.getPath().toLowerCase().split("\\.");
+            String extension = null;
+            if(parts.length > 1) {
+                extension = parts[parts.length - 1];
+            }
+            if(extension != null) {
+                if(extensions.contains(extension) && extension.length() <= 4){
+                    AvatarManager.uploadAvatar(file, userLogin);
+                    setAvatar(AvatarManager.downloadAvatar(userLogin));
+                    System.out.println("Ustawiono nowy avatar");
+                }else {
+                    System.out.println("Nieobsługiwane rozszerzenie pliku!");
+                }
+            }else{
+                System.out.println("Niepoprawna ścieżka pliku!");
+            }
         }else {
             System.out.println("Nie wczytano pliku");
         }
