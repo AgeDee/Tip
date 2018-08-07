@@ -4,8 +4,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -24,6 +26,7 @@ public class LoginController {
 
     @FXML private TextField userLogin;
     @FXML private PasswordField userPassword;
+    @FXML private Label warningLabel;
 
     String loggedUserName;
 
@@ -39,11 +42,13 @@ public class LoginController {
 
                 if (userDAO.findByUserLogin(userLogin.getText()) == null) {
                     System.out.println("Login Failed");
+                    warningLabel.setTextFill(Color.RED);
+                    warningLabel.setText("Login lub hasło są niepoprawne");
                 }
                 //else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(userPassword.getText())){
                 else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(passwordHash)) {
                     //String user_ip = "";
-
+                    warningLabel.setText("");
                     loggedUserName = userLogin.getText();
 
                     try(final DatagramSocket socket = new DatagramSocket()){
@@ -107,6 +112,7 @@ public class LoginController {
         Scene scene = new Scene(root);
         scene.getStylesheets().add("sample/style.css");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
 
     }

@@ -7,10 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e00714d1-da39-458d-bbd2-3b450ebe472c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sample/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/register.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -80,28 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/SettingsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TermsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/TermsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="204">
               <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,11 +92,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="login.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/login.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="391">
+              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/RegisterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="92" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -178,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/terms.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/TermsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/register.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/log.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/blockedUsers.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/Contact.java" />
@@ -211,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/login.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/LoginController.java" />
       </list>
     </option>
@@ -475,7 +472,7 @@
       <workItem from="1533592970729" duration="3250000" />
       <workItem from="1533596811852" duration="42000" />
       <workItem from="1533598427900" duration="92000" />
-      <workItem from="1533660751041" duration="4006000" />
+      <workItem from="1533660751041" duration="8839000" />
     </task>
     <task id="LOCAL-00001" summary="registration added">
       <created>1526933279245</created>
@@ -502,7 +499,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179034000" />
+    <option name="totallyTimeSpent" value="183867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -608,26 +605,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="db://[bazaTip]consoles\bazaTip" />
     <entry file="db://[bazaTip]consoles\bazaTip" />
     <entry file="db://[bazaTip]consoles\bazaTip" />
@@ -761,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -799,27 +769,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/CurrentUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -830,13 +783,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -854,10 +800,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/register.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="92" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="391">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
         </state>
       </provider>
     </entry>

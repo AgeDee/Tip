@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.paint.Color;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -58,32 +59,41 @@ public class RegisterController {
                     if (!email.isEmpty()) {
                         if (userDAO.findByUserEmail(email) == null) {
                             if (!password1.isEmpty() && !password2.isEmpty()) {
+                                if (password1.matches("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")) {
+                                    //tutaj rejestracja
+                                    infoLabel.setTextFill(Color.GREEN);
+                                    infoLabel.setText("Dane poprawne.");
 
-                                //tutaj rejestracja
-                                infoLabel.setTextFill(Color.GREEN);
-                                infoLabel.setText("Dane poprawne.");
+                                    MessageDigest digest = MessageDigest.getInstance("SHA-256");
+                                    byte[] hash = digest.digest(password1.getBytes(StandardCharsets.UTF_8));
+                                    String passwordHash = bytesToHex(hash);
 
-                                MessageDigest digest = MessageDigest.getInstance("SHA-256");
-                                byte[] hash = digest.digest(password1.getBytes(StandardCharsets.UTF_8));
-                                String passwordHash = bytesToHex(hash);
+                                    User newUser = new User(login, passwordHash, email);
+                                    userDAO.create(newUser);
 
-                                User newUser = new User(login, passwordHash, email);
-                                userDAO.create(newUser);
+                                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                                    alert.setTitle("Rejestracja");
+                                    alert.setHeaderText(null);
+                                    alert.setContentText("Rejestracja przebiegła pomyślnie. Możesz się teraz zalogować.");
+                                    alert.showAndWait();
 
-                                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                                alert.setTitle("Rejestracja");
-                                alert.setHeaderText(null);
-                                alert.setContentText("Rejestracja przebiegła pomyślnie. Możesz się teraz zalogować.");
-                                alert.showAndWait();
+                                    Stage stage = (Stage) loginField.getScene().getWindow();
+                                    stage.close();
 
-                                Stage stage = (Stage) loginField.getScene().getWindow();
-                                stage.close();
-
-                                Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-                                Scene scene = new Scene(root);
-                                scene.getStylesheets().add("sample/style.css");
-                                stage.setScene(scene);
-                                stage.show();
+                                    Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+                                    Scene scene = new Scene(root);
+                                    scene.getStylesheets().add("sample/style.css");
+                                    stage.setScene(scene);
+                                    stage.show();
+                                }
+                                else{
+                                    infoLabel.setTextFill(Color.RED);
+                                    infoLabel.setText("Hasło musi mieć min. 8 znaków i składać się z:\n" +
+                                            "przynajmniej jednej małej litery, dużej litery,\n" +
+                                            "liczby i znaku specjalnego");
+                                    infoLabel.setWrapText(true);
+                                    infoLabel.setTextAlignment(TextAlignment.JUSTIFY);
+                                }
                             } else {
                                 infoLabel.setTextFill(Color.RED);
                                 infoLabel.setText("Hasła nie są takie same!");

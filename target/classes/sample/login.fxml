@@ -10,16 +10,17 @@
 
 <AnchorPane prefHeight="291.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
       <children>
-         <Button defaultButton="true" layoutX="149.0" layoutY="188.0" mnemonicParsing="false" onAction="#OnLoginButtonClick" prefHeight="25.0" prefWidth="92.0" text="Zaloguj" />
-         <Button layoutX="149.0" layoutY="230.0" mnemonicParsing="false" onAction="#OnRegisterButtonClick" prefHeight="25.0" prefWidth="92.0" text="Rejestracja" />
+         <Button defaultButton="true" layoutX="149.0" layoutY="203.0" mnemonicParsing="false" onAction="#OnLoginButtonClick" prefHeight="25.0" prefWidth="92.0" text="Zaloguj" />
+         <Button layoutX="149.0" layoutY="241.0" mnemonicParsing="false" onAction="#OnRegisterButtonClick" prefHeight="25.0" prefWidth="92.0" text="Rejestracja" />
          <Text layoutX="149.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logowanie">
             <font>
                <Font size="20.0" />
             </font>
          </Text>
-         <Label layoutX="35.0" layoutY="97.0" text="Login:" />
-         <TextField fx:id="userLogin" layoutX="111.0" layoutY="93.0" prefHeight="25.0" prefWidth="225.0" promptText="login" text="" />
-         <Label layoutX="35.0" layoutY="143.0" text="Hasło:" />
-      <PasswordField fx:id="userPassword" layoutX="111.0" layoutY="139.0" prefHeight="25.0" prefWidth="225.0" promptText="hasło" text="" />
+         <Label layoutX="35.0" layoutY="118.0" text="Login:" />
+         <TextField fx:id="userLogin" layoutX="111.0" layoutY="114.0" prefHeight="25.0" prefWidth="225.0" promptText="login" text="" />
+         <Label layoutX="35.0" layoutY="156.0" text="Hasło:" />
+      <PasswordField fx:id="userPassword" layoutX="111.0" layoutY="152.0" prefHeight="25.0" prefWidth="225.0" promptText="hasło" text="" />
+      <Label fx:id="warningLabel" layoutX="37.0" layoutY="74.0" prefHeight="17.0" prefWidth="331.0" />
       </children>
 </AnchorPane>
