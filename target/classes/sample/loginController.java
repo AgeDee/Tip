@@ -76,6 +76,8 @@ public class LoginController {
                             Stage onCloseStage = new Stage();
                             onCloseStage.setScene(afterCloseScene);
                             onCloseStage.show();
+
+                            MessageCommunicationClass.serverSocket.close();
                         }catch(IOException exception){
                             System.out.println("Exception in LoginController:OnCloseRequest");
                             System.out.println(exception);

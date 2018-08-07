@@ -21,10 +21,12 @@ import static sample.MainController.voipConnection;
 public class MessageCommunicationClass {
 
     public static String callerIP;
+    public static ServerSocket serverSocket;
 
     public void startMsgServer(String msgServerIp, int msgServerPort) throws Exception{
 
-        ServerSocket serverSocket = new ServerSocket(msgServerPort,50, InetAddress.getByName(msgServerIp));
+        serverSocket = new ServerSocket(msgServerPort,50, InetAddress.getByName(msgServerIp));
+
 
         while (true) {
             ServerMessageCommunicationClass messageServer = new ServerMessageCommunicationClass(serverSocket.accept());

@@ -102,21 +102,29 @@ public class MainController {
     }
 
     @FXML
-    void logoutAction() throws IOException {
+    void logoutAction() {
         System.out.println("Wyloguj");
 
         userDAO.updateUserIpAddressById(userDAO.findByUserLogin(userLogin).getUserId(),null);
+
 
         Stage stage = (Stage) userText.getScene().getWindow();
         stage.close();
 
         CurrentUser.setUserLogin("");
+        try {
+            MessageCommunicationClass.serverSocket.close();
 
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-        Scene scene = new Scene(root);
-        scene.getStylesheets().add("sample/style.css");
-        stage.setScene(scene);
-        stage.show();
+            Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add("sample/style.css");
+            Stage logoutStage = new Stage();
+            logoutStage.setScene(scene);
+            logoutStage.show();
+        }catch(IOException ex){
+            System.out.println("Exception in MainController:logoutAction");
+            System.out.println(ex);
+        }
     }
 
     @FXML

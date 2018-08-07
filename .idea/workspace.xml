@@ -7,256 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e00714d1-da39-458d-bbd2-3b450ebe472c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP.jnlp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/Projekt_TIP.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/Projekt_TIP.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/app/Projekt_TIP.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/app/Projekt_TIP.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/msvcp120.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/msvcr120.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/packager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/awt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/bci.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/dcpr.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/decora_sse.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/dt_socket.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/fontmanager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/fxplugins.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/glass.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/glib-lite.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/gstreamer-lite.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/instrument.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/j2pcsc.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jaas_nt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/java.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javaaccessbridge.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javafx_font.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javafx_font_t2k.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javafx_iio.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/javajpeg.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jawt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jdwp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jfxmedia.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jfxwebkit.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jimage.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jli.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jsound.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/jsoundds.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/kcms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/lcms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/management.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/management_agent.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/management_ext.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/mlib_image.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/msvcp120.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/msvcr120.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/net.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/nio.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/prefs.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/prism_common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/prism_d3d.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/prism_sw.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/rmi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/server/jvm.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/splashscreen.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/sunec.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/t2k.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/verify.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/w2k_lsa_auth.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/windowsaccessbridge-64.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/bin/zip.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/management/jmxremote.access" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/management/jmxremote.password.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/management/management.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/net.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/java.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/java.security" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/limited/default_US_export.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/limited/default_local.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/limited/exempt_local.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/unlimited/default_US_export.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/security/policy/unlimited/default_local.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/conf/sound.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/classfile_constants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jawt.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jdwpTransport.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jni.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jvmti.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/jvmticmlr.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/bridge/AccessBridgeCallbacks.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/bridge/AccessBridgeCalls.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/bridge/AccessBridgePackages.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/jawt_md.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/include/win32/jni_md.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/aes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/asm.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/cldr.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/icu.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/public_suffix.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.base/zlib.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.compiler/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.compiler/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.datatransfer/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.datatransfer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/colorimaging.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/giflib.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/harfbuzz.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/jpeg.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/lcms.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/libpng.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/mesa3d.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.desktop/opengl.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.instrument/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.instrument/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.logging/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.logging/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.management.rmi/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.management.rmi/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.management/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.management/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.naming/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.naming/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.prefs/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.prefs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.rmi/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.rmi/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.scripting/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.scripting/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.security.jgss/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.security.jgss/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.security.sasl/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.security.sasl/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.smartcardio/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.smartcardio/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.sql.rowset/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.sql.rowset/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.sql/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.sql/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml.crypto/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml.crypto/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml.crypto/santuario.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/bcel.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/dom.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/jcup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/xalan.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/xerces.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/java.xml/xmlresolver.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.base/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.base/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.controls/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.controls/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.fxml/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.fxml/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.graphics/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.graphics/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.graphics/icu_v51.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.graphics/jpeg_v7.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/applecoreaudio.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/glib.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/gstreamer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.media/libffi.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.swing/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.swing/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/icu_v48.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/libxml2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/libxslt.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/javafx.web/webkit.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.accessibility/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.accessibility/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.charsets/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.charsets/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.crypto.ec/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.crypto.ec/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.crypto.ec/ecc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.dynalink/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.dynalink/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.dynalink/dynalink.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.httpserver/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.httpserver/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jdwp.agent/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jdwp.agent/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jfr/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jfr/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jsobject/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.jsobject/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.localedata/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.localedata/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.localedata/cldr.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.localedata/thaidict.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.management.agent/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.management.agent/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.management/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.management/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.naming.dns/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.naming.dns/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.naming.rmi/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.naming.rmi/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.net/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.net/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.packager.services/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.packager.services/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.scripting.nashorn/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.scripting.nashorn/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.scripting.nashorn/double-conversion.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.scripting.nashorn/joni.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.sctp/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.sctp/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.security.auth/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.security.auth/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.security.jgss/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.security.jgss/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.unsupported/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.unsupported/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.xml.dom/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.xml.dom/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.zipfs/COPYRIGHT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/legal/jdk.zipfs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/classlist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fontconfig.bfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fontconfig.properties.src" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaBrightDemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaBrightDemiItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaBrightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaBrightRegular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaSansDemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaSansRegular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaTypewriterBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/fonts/LucidaTypewriterRegular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/javafx-swt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/javafx.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jawt.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jfr/default.jfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jfr/profile.jfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jrt-fs.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jvm.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/jvm.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/modules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/psfont.properties.ja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/psfontj2d.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/blacklist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/blacklisted.certs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/cacerts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/default.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/public_suffix_list.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/security/trusted.libraries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/server/Xusage.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/tzdb.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/lib/tzmappings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Projekt_TIP/Projekt_TIP/runtime/release" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -271,10 +25,14 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="118" column="21" selection-start-line="112" selection-start-column="8" selection-end-line="118" selection-end-column="21" />
+            <state relative-caret-position="168">
+              <caret line="115" column="59" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#14901#14902#0" expanded="true" />
+                <element signature="e#14950#14951#0" expanded="true" />
+                <element signature="e#14979#14980#0" expanded="true" />
+                <element signature="e#15026#15027#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -313,20 +71,11 @@
       <file leaf-file-name="MessageCommunicationClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="-453">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/SearchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="42" selection-start-line="42" selection-end-line="46" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -364,8 +113,17 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+            <state relative-caret-position="418">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -400,6 +158,7 @@
       <find>Wyk</find>
       <find>Wykryt</find>
       <find>log</find>
+      <find>logout</find>
     </findStrings>
     <replaceStrings>
       <replace>contact</replace>
@@ -448,10 +207,10 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/BlockedUsersController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/CallToUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/CallWindowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/VoipConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/login.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/LoginController.java" />
       </list>
     </option>
@@ -486,9 +245,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -579,7 +338,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/sample" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Nowy folder/Tip" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -715,6 +474,8 @@
       <workItem from="1532597554137" duration="1301000" />
       <workItem from="1533592970729" duration="3250000" />
       <workItem from="1533596811852" duration="42000" />
+      <workItem from="1533598427900" duration="92000" />
+      <workItem from="1533660751041" duration="4006000" />
     </task>
     <task id="LOCAL-00001" summary="registration added">
       <created>1526933279245</created>
@@ -741,10 +502,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174936000" />
+    <option name="totallyTimeSpent" value="179034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -756,7 +518,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3008299" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3006263" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -831,13 +593,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sample/MainController.java</url>
-          <line>317</line>
+          <line>325</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sample/MainController.java</url>
-          <line>289</line>
+          <line>297</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -985,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/logRow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1044,16 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1078,20 +823,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="118" column="21" selection-start-line="112" selection-start-column="8" selection-end-line="118" selection-end-column="21" />
+        <state relative-caret-position="-453">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/LogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="115" column="59" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#14901#14902#0" expanded="true" />
+            <element signature="e#14950#14951#0" expanded="true" />
+            <element signature="e#14979#14980#0" expanded="true" />
+            <element signature="e#15026#15027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+        <state relative-caret-position="418">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
