@@ -9,6 +9,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import org.w3c.dom.UserDataHandler;
 
 import java.io.IOException;
 import java.net.DatagramSocket;
@@ -20,18 +21,30 @@ import java.security.NoSuchAlgorithmException;
 
 public class LoginController {
 
-    private UserDAO userDAO = new UserDAO();
+    public static String DB_URL;
+    //"jdbc:mysql://tipdb.czufm3rgmejc.eu-central-1.rds.amazonaws.com:3306/tip_db"
+
+    //private UserDAO userDAO = new UserDAO();
+
+    private UserDAO userDAO;
 
     public static String user_ip = "";
 
     @FXML private TextField userLogin;
     @FXML private PasswordField userPassword;
     @FXML private Label warningLabel;
+    @FXML public TextField db_url;
+
+
 
     String loggedUserName;
 
+
+
     @FXML
     public void OnLoginButtonClick() throws IOException, NoSuchAlgorithmException {
+        DB_URL = db_url.getText();
+        userDAO = new UserDAO();
         if(userLogin.getLength() != 0) {
             if (userPassword.getLength() != 0) {
                 MessageDigest digest = MessageDigest.getInstance("SHA-256");
@@ -105,6 +118,9 @@ public class LoginController {
 
     @FXML
     void OnRegisterButtonClick() throws IOException {
+        DB_URL = db_url.getText();
+        userDAO = new UserDAO();
+
         Stage stage = (Stage) userLogin.getScene().getWindow();
         stage.close();
 

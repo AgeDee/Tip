@@ -7,10 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e00714d1-da39-458d-bbd2-3b450ebe472c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/ContactDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/ContactDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sample/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sample/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/telephone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/MessageCommunicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/MessageCommunicationClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/ServerMessageCommunicationClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/ServerMessageCommunicationClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/mainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/mainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/mainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/telephone.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,27 +34,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
+      <file leaf-file-name="RingTonePlayerClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/RingTonePlayerClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="115" column="59" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="59" />
+            <state relative-caret-position="402">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14901#14902#0" expanded="true" />
-                <element signature="e#14950#14951#0" expanded="true" />
-                <element signature="e#14979#14980#0" expanded="true" />
-                <element signature="e#15026#15027#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CurrentUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/CurrentUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -50,20 +51,44 @@
       <file leaf-file-name="BlockedUserDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="119">
+              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VoipConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/VoipConnection.java">
+      <file leaf-file-name="ConnectionsLogDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2278">
-              <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/ContactDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-670">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="17" column="110" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -71,8 +96,8 @@
       <file leaf-file-name="MessageCommunicationClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-453">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="291">
+              <caret line="189" column="101" selection-start-line="189" selection-start-column="101" selection-end-line="189" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +108,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+            <state relative-caret-position="289">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,32 +120,18 @@
       <file leaf-file-name="login.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/login.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/RegisterController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="92" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/LogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+            <state relative-caret-position="306">
+              <caret line="121" column="32" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -186,17 +197,12 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/settings.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/ConnectionLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/logRow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/LogController.java" />
         <option value="[bazaTip]consoles\bazaTip" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/ContactDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClientClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/connectionWindow.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/callToUser.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/AvatarManager.java" />
@@ -204,10 +210,17 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/CallToUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/CallWindowController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/VoipConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/login.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/ringTonePlayerClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/RingTonePlayerClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/login.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/ContactDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/LoginController.java" />
       </list>
     </option>
@@ -324,6 +337,15 @@
               <item name="Tip" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="UserDAO.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="Tip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tip" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -342,11 +364,14 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Lenovo\IdeaProjects\Tip\src\main\java\sample" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Krolik\IdeaProjects\Tip\src\main\resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="sample" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\IdeaProjects\Tip\src\main\java\sample" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -472,7 +497,7 @@
       <workItem from="1533592970729" duration="3250000" />
       <workItem from="1533596811852" duration="42000" />
       <workItem from="1533598427900" duration="92000" />
-      <workItem from="1533660751041" duration="8839000" />
+      <workItem from="1533660751041" duration="19092000" />
     </task>
     <task id="LOCAL-00001" summary="registration added">
       <created>1526933279245</created>
@@ -499,7 +524,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183867000" />
+    <option name="totallyTimeSpent" value="194120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -515,13 +540,13 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3006263" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3006263" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17254686" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17254686" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -590,13 +615,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sample/MainController.java</url>
-          <line>325</line>
+          <line>324</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sample/MainController.java</url>
-          <line>297</line>
+          <line>296</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -605,7 +630,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="db://[bazaTip]consoles\bazaTip" />
     <entry file="db://[bazaTip]consoles\bazaTip" />
     <entry file="db://[bazaTip]consoles\bazaTip" />
     <entry file="db://[bazaTip]consoles\bazaTip" />
@@ -630,13 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="54" column="72" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -689,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1301">
-          <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -707,20 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ContactDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -776,30 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-453">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="115" column="59" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14901#14902#0" expanded="true" />
-            <element signature="e#14950#14951#0" expanded="true" />
-            <element signature="e#14979#14980#0" expanded="true" />
-            <element signature="e#15026#15027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/register.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -815,38 +787,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="826">
+          <caret line="83" column="66" lean-forward="true" selection-start-line="83" selection-start-column="66" selection-end-line="83" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        <state relative-caret-position="273">
+          <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#14901#14902#0" expanded="true" />
+            <element signature="e#14950#14951#0" expanded="true" />
+            <element signature="e#14979#14980#0" expanded="true" />
+            <element signature="e#15026#15027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/RingTonePlayerClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/MessageCommunicationClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="189" column="101" selection-start-line="189" selection-start-column="101" selection-end-line="189" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-670">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/login.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="92" selection-end-column="74" />
+        <state relative-caret-position="423">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ConnectionsLogDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/ContactDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/BlockedUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="17" column="110" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="110" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+        <state relative-caret-position="306">
+          <caret line="121" column="32" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
         </state>
       </provider>
     </entry>

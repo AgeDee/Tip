@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -110,6 +111,7 @@ class ServerMessageCommunicationClass extends Thread {
 
                                     //Akcja na przyciśnięcie Buttona "Odbierz"
                                     connectionWindowController.getCallButton.setOnAction((event) -> {
+                                        MainController.ringTonePlayerClass.ringTonePlayer.stop();
                                         //Uruchamiamy server voip
                                         new Thread(() -> {
                                             System.out.println("Voip Server started!!!");
@@ -180,10 +182,12 @@ class ServerMessageCommunicationClass extends Thread {
                                         stageForCallWindow.show();
 
 
+
                                     });
 
                                     connectionWindowController.rejectCallButton.setOnAction((event) -> {
                                         try {
+                                            MainController.ringTonePlayerClass.ringTonePlayer.stop();
                                             String messageToSend = "REJECT" + "\n";
                                             clientCommunicationMessageOutput.write(messageToSend, 0, messageToSend.length());
                                             clientCommunicationMessageOutput.flush();
@@ -196,6 +200,15 @@ class ServerMessageCommunicationClass extends Thread {
 
 
                                     stage.show();
+                                    new Thread(() -> {
+                                        //MainController.ringTonePlayerClass.play();
+                                        MainController.ringTonePlayerClass.ringTonePlayer.setOnEndOfMedia(() -> {
+                                            MainController.ringTonePlayerClass.ringTonePlayer.seek(Duration.ZERO);
+                                            MainController.ringTonePlayerClass.ringTonePlayer.play();
+                                        });
+                                        MainController.ringTonePlayerClass.ringTonePlayer.play();
+
+                                    }).start();
 
                                 } catch (Exception ex) {
                                     System.out.println("Exception in ServerMessageCommunication:CONNECT");

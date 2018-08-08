@@ -1,7 +1,6 @@
 package sample;
 
 import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,7 +12,6 @@ import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -68,6 +66,7 @@ public class MainController {
     public static VoipConnection voipConnection = new VoipConnection();
 
     //Statyczne zmienne wykorzystywane w innych klasach programu
+    public static RingTonePlayerClass ringTonePlayerClass;
 
     //Wykorzystywana zmienna do zamykania okna gdy te zostanie zamknięte przez naszego rozmówce
     public static Stage callWindowStage;
@@ -82,7 +81,7 @@ public class MainController {
         userText.setText(userLogin);
         selectedText.setText("-");
 
-
+        ringTonePlayerClass = new RingTonePlayerClass();
 
         //Odpalenie servera do komunikacji pomiędzy clientami
         new Thread(() -> {

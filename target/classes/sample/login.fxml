@@ -8,19 +8,25 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="291.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+<AnchorPane prefHeight="326.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
       <children>
-         <Button defaultButton="true" layoutX="149.0" layoutY="203.0" mnemonicParsing="false" onAction="#OnLoginButtonClick" prefHeight="25.0" prefWidth="92.0" text="Zaloguj" />
-         <Button layoutX="149.0" layoutY="241.0" mnemonicParsing="false" onAction="#OnRegisterButtonClick" prefHeight="25.0" prefWidth="92.0" text="Rejestracja" />
-         <Text layoutX="149.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logowanie">
+         <Button defaultButton="true" layoutX="182.0" layoutY="228.0" mnemonicParsing="false" onAction="#OnLoginButtonClick" prefHeight="25.0" prefWidth="92.0" text="Zaloguj" />
+         <Button layoutX="182.0" layoutY="269.0" mnemonicParsing="false" onAction="#OnRegisterButtonClick" prefHeight="25.0" prefWidth="92.0" text="Rejestracja" />
+         <Text layoutX="180.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logowanie">
             <font>
                <Font size="20.0" />
             </font>
          </Text>
-         <Label layoutX="35.0" layoutY="118.0" text="Login:" />
-         <TextField fx:id="userLogin" layoutX="111.0" layoutY="114.0" prefHeight="25.0" prefWidth="225.0" promptText="login" text="" />
-         <Label layoutX="35.0" layoutY="156.0" text="Hasło:" />
-      <PasswordField fx:id="userPassword" layoutX="111.0" layoutY="152.0" prefHeight="25.0" prefWidth="225.0" promptText="hasło" text="" />
-      <Label fx:id="warningLabel" layoutX="37.0" layoutY="74.0" prefHeight="17.0" prefWidth="331.0" />
+         <Label layoutX="35.0" layoutY="155.0" text="Login:" />
+         <TextField fx:id="db_url" layoutX="10.0" layoutY="42.0" prefHeight="25.0" prefWidth="435.0" text="jdbc:mysql://tipdb.czufm3rgmejc.eu-central-1.rds.amazonaws.com:3306/tip_db" />
+         <Label layoutX="35.0" layoutY="190.0" text="Hasło:" />
+      <TextField fx:id="userLogin" alignment="CENTER" layoutX="111.0" layoutY="151.0" prefHeight="25.0" prefWidth="250.0" promptText="login" text="" />
+      <PasswordField fx:id="userPassword" alignment="CENTER" layoutX="111.0" layoutY="186.0" prefHeight="25.0" prefWidth="250.0" promptText="hasło" text="" />
+      <Label fx:id="warningLabel" alignment="CENTER" layoutX="71.0" layoutY="116.0" prefHeight="17.0" prefWidth="331.0" />
+      <Text layoutX="107.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adres serwera bazy danych">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
       </children>
 </AnchorPane>
