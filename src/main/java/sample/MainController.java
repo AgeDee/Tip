@@ -11,6 +11,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -138,6 +139,7 @@ public class MainController {
             BlockedUser blockedUser = new BlockedUser(userId, selectedUserId, "current_timestamp"); //data tutaj nie gra roli
             blockedUserDAO.create(blockedUser);
             System.out.println("Użytkownik " + selectedUser + " został wpisany na listę zablokowanych użytkowników.");
+            selectedText.setText("-");
             reloadContactList();
 
         } else {
@@ -160,6 +162,7 @@ public class MainController {
                 if(c.getContact_id() == selectedUserId){
                     contactDAO.deleteContactById(c.getId());
                     System.out.println("Login usuniętego użytkownika: " + userDAO.findByUserId(c.getContact_id()).getLogin());
+                    selectedText.setText("-");
                     reloadContactList();
                 }
             }
@@ -186,9 +189,9 @@ public class MainController {
         LogController controller = loader.getController();
         controller.loadList();
 
-        stage.show();
-
-
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initOwner(logButton.getScene().getWindow());
+        stage.showAndWait();
     }
 
     @FXML
@@ -207,7 +210,10 @@ public class MainController {
             setAvatar(AvatarManager.downloadAvatar(userLogin));
         });
 
-        stage.show();
+
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initOwner(logButton.getScene().getWindow());
+        stage.showAndWait();
     }
 
     @FXML
@@ -230,7 +236,9 @@ public class MainController {
             reloadContactList();
         });
 
-        stage.show();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initOwner(logButton.getScene().getWindow());
+        stage.showAndWait();
     }
 
     @FXML
@@ -256,22 +264,6 @@ public class MainController {
                 CallToUserController callToUserController = loader.getController();
                 callToUserController.setInfomrationalText(selectedUser);
 
-
-//            stage.setOnShowing(new EventHandler<WindowEvent>() {
-//                @Override
-//                public void handle(WindowEvent event) {
-//
-//                        new Thread(() -> {
-//                            try {
-//                                handleConnection(stage);
-//                            }catch(Exception ex){
-//                                System.out.println("Exception in Stage::setOnShowing connectAction class");
-//                                System.out.println(ex);
-//                            }
-//                        });
-//                }
-//            });
-
                 new Thread(() -> {
 
                     try {
@@ -282,7 +274,7 @@ public class MainController {
                     }
                 }).start();
 
-                stage.show();
+                stage.showAndWait();
             }
             else{
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -291,11 +283,6 @@ public class MainController {
                 alert.setContentText("Użytkownik nie jest aktualnie zalogowany");
                 alert.showAndWait();
             }
-
-
-
-
-
 
         } else {
             System.out.println("Nie wybrano elementu!");
@@ -376,32 +363,6 @@ public class MainController {
                 stage.show();
             });
 
-
-//            String selectedUser = contactsList.getSelectionModel().getSelectedItem();
-//
-//            FXMLLoader loader = new FXMLLoader(getClass().getResource("callWindow.fxml"));
-//            Parent root = loader.load();
-//            Stage stage = new Stage();
-//            stage.setTitle("Połączenie");
-//            Scene scene = new Scene(root);
-//            scene.getStylesheets().add("sample/style.css");
-//            stage.setScene(scene);
-//
-//            CallWindowController controller = loader.getController();
-//            controller.setTargetUser(selectedUser);
-//
-//            stage.setOnCloseRequest(event -> {
-//                System.out.println("Zakończenie połączenia");
-//
-//                //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
-//                voipConnection.stopServer();
-//                messageClient.sendMessage("DISCONNECT");
-//                voipConnection.stopCapture();
-//                messageClient.closeMsgClient();
-//
-//            });
-//
-//            stage.show();
         }
         else if (response.equals("REJECT")){
             Platform.runLater(() -> {
@@ -443,7 +404,9 @@ public class MainController {
             reloadContactList();
         });
 
-        stage.show();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initOwner(logButton.getScene().getWindow());
+        stage.showAndWait();
     }
 
     @FXML

@@ -45,9 +45,6 @@ public class LogController {
                 new PropertyValueFactory<logRow,String>("date")
         );
 
-        //todo tutaj pobieranie drugiego usera z wierszy gdzie znajduje się dany user (obojętnie czy jako user1 czy user2)
-        //todo potem pobieranie loginu tego drugiego usera i dodawanie do listy 'data'
-
         tableView.setItems(data);
 
     }
@@ -64,6 +61,9 @@ public class LogController {
         for(ConnectionLog c : connectionLogResultList){
             data.add(new logRow(userDAO.findByUserId(c.getUser2Id()).getLogin(), c.getDescription(), c.getDate()));
         }
+
+        //todo tutaj pobieranie drugiego usera z wierszy gdzie znajduje się dany user (obojętnie czy jako user1 czy user2)
+        //todo potem pobieranie loginu tego drugiego usera i dodawanie do listy 'data'
     }
 }
 

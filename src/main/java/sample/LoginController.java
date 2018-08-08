@@ -35,11 +35,7 @@ public class LoginController {
     @FXML private Label warningLabel;
     @FXML public TextField db_url;
 
-
-
     String loggedUserName;
-
-
 
     @FXML
     public void OnLoginButtonClick() throws IOException, NoSuchAlgorithmException {
