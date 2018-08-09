@@ -68,9 +68,6 @@ public class LogController {
 
             data.add(new logRow(userDAO.findByUserId(c.getUser1Id()).getLogin(), c.getDescription(), c.getDate()));
         }
-
-        //todo tutaj pobieranie drugiego usera z wierszy gdzie znajduje się dany user (obojętnie czy jako user1 czy user2)
-        //todo potem pobieranie loginu tego drugiego usera i dodawanie do listy 'data'
     }
 }
 
