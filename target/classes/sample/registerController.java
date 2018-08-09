@@ -56,7 +56,7 @@ public class RegisterController {
 
             if (!login.isEmpty()) {
                 if (userDAO.findByUserLogin(login) == null) {
-                    if (!email.isEmpty() && email.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$")) {
+                    if (!email.isEmpty() && email.matches("^[a-zA-Z0-9.!#$%&’*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$")) {
                         if (userDAO.findByUserEmail(email) == null) {
                             if (!password1.isEmpty() && !password2.isEmpty()) {
                                 if (password1.matches("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")) {
