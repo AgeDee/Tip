@@ -25,6 +25,7 @@ public class CallWindowController {
 
     public String targetUserLogin;
     int targetUserId;
+    public String countedTime;
 
     //Zmienne timera
     private AnimationTimer timer;
@@ -46,12 +47,16 @@ public class CallWindowController {
                     if (now > lastTime + 1_000_000_000) {
                         if(seconds < 59) {
                             seconds++;
-                            conversationTime.setText("Czas rozmowy: 00:" + Integer.toString(minutes) + ":" + Integer.toString(seconds)); //Czas rozmowy
+                            String form_minutes = String.format("%02d", minutes);
+                            String form_seconds = String.format("%02d", seconds);
+                            conversationTime.setText("Czas rozmowy: 00:" + form_minutes + ":" + form_seconds); //Czas rozmowy
                             lastTime = now;
                         }else {
                             seconds = 0;
                             minutes++;
-                            conversationTime.setText("Czas rozmowy: 00:" + Integer.toString(minutes) + ":" + Integer.toString(seconds));
+                            String form_minutes = String.format("%02d", minutes);
+                            String form_seconds = String.format("%02d", seconds);
+                            conversationTime.setText("Czas rozmowy: 00:" + form_minutes + ":" + form_seconds);
                             lastTime = now;
                         }
                     }
@@ -64,6 +69,7 @@ public class CallWindowController {
             @Override
             public void stop() {
                 super.stop();
+                countedTime = "0h " + minutes + "min " + seconds + "sec";
                 lastTime = 0;
                 seconds = 0;
                 minutes = 0;

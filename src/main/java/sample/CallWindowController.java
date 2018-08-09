@@ -25,6 +25,7 @@ public class CallWindowController {
 
     public String targetUserLogin;
     int targetUserId;
+    public String countedTime;
 
     //Zmienne timera
     private AnimationTimer timer;
@@ -68,6 +69,7 @@ public class CallWindowController {
             @Override
             public void stop() {
                 super.stop();
+                countedTime = "0h " + minutes + "min " + seconds + "sec";
                 lastTime = 0;
                 seconds = 0;
                 minutes = 0;

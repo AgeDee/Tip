@@ -8,6 +8,9 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -73,12 +76,20 @@ public class ConnectionsLogDAO {
 
     }
 
-    public void create(ConnectionLog connectionLog){
+    public void create(ConnectionLog connectionLog) throws ParseException {
+//        String sql = "INSERT INTO connections_log(user1_id, user2_id, date, description)" +
+//                "VALUES (:user1_id, :user2_id, CURRENT_TIMESTAMP , :description)";
+
         String sql = "INSERT INTO connections_log(user1_id, user2_id, date, description)" +
-                "VALUES (:user1_id, :user2_id, CURRENT_TIMESTAMP , :description)";
+                "VALUES (:user1_id, :user2_id, :date , :description)";
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = format.parse(connectionLog.getDate());
+
         Map namedParameters = new HashMap();
         namedParameters.put("user1_id", connectionLog.getUser1Id());
         namedParameters.put("user2_id", connectionLog.getUser2Id());
+        namedParameters.put("date", date);
         namedParameters.put("description", connectionLog.getDescription());
         jdbc.update(sql, namedParameters);
         System.out.println("Created record with: " + connectionLog.toString());

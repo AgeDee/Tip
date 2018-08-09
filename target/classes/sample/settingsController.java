@@ -3,6 +3,7 @@ package sample;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
+import javafx.scene.paint.Color;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
@@ -12,6 +13,8 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SettingsController {
 
@@ -45,12 +48,42 @@ public class SettingsController {
         fileChooser.getExtensionFilters().add(filter);
         File file = fileChooser.showOpenDialog(new Stage());
 
+        List<String> extensions = new ArrayList<>();
+
+        extensions.add("png");
+        extensions.add("jpg");
+        extensions.add("jpeg");
+        extensions.add("bmp");
+        extensions.add("gif");
+
         if(file != null) {
-            AvatarManager.uploadAvatar(file, userLogin);
-            setAvatar(AvatarManager.downloadAvatar(userLogin));
-            System.out.println("Ustawiono nowy avatar");
+            //sprawdzanie czy jpg
+            String parts[] = file.getPath().toLowerCase().split("\\.");
+            String extension = null;
+            if(parts.length > 1) {
+                extension = parts[parts.length - 1];
+            }
+            if(extension != null) {
+                if(extensions.contains(extension) && extension.length() <= 4){
+                    AvatarManager.uploadAvatar(file, userLogin);
+                    setAvatar(AvatarManager.downloadAvatar(userLogin));
+                    System.out.println("Ustawiono nowy avatar");
+                    infoLabel.setTextFill(Color.GREEN);
+                    infoLabel.setText("Ustawiono nowy avatar");
+                }else {
+                    System.out.println("Nieobsługiwane rozszerzenie pliku!");
+                    infoLabel.setTextFill(Color.RED);
+                    infoLabel.setText("Nieobsługiwane rozszerzenie pliku!");
+                }
+            }else{
+                System.out.println("Niepoprawna ścieżka pliku!");
+                infoLabel.setTextFill(Color.RED);
+                infoLabel.setText("Niepoprawna ścieżka pliku!");
+            }
         }else {
             System.out.println("Nie wczytano pliku");
+            infoLabel.setTextFill(Color.RED);
+            infoLabel.setText("Nie wczytano pliku");
         }
     }
 
@@ -58,24 +91,38 @@ public class SettingsController {
     void changePassActon() throws NoSuchAlgorithmException {
         if(pass1Field.getLength() != 0 && pass2Field.getLength() != 0){
             if(pass1Field.getText().equals(pass2Field.getText())){
-                MessageDigest digest = MessageDigest.getInstance("SHA-256");
-                byte[] hash = digest.digest(pass1Field.getText().getBytes(StandardCharsets.UTF_8));
-                String passwordHash = bytesToHex(hash);
+                if (pass1Field.getText().matches("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")) {
+                    MessageDigest digest = MessageDigest.getInstance("SHA-256");
+                    byte[] hash = digest.digest(pass1Field.getText().getBytes(StandardCharsets.UTF_8));
+                    String passwordHash = bytesToHex(hash);
 
-                User userNewPass = userDAO.findByUserLogin(userLogin);
-                userNewPass.setPassword(passwordHash);
+                    User userNewPass = userDAO.findByUserLogin(userLogin);
+                    userNewPass.setPassword(passwordHash);
 
-                userDAO.updateUserById(userNewPass.getUserId(), userNewPass.getLogin(), userNewPass.getPassword(), userNewPass.getEmail());
-                System.out.println("Hasło zostało zmienione");
+                    userDAO.updateUserById(userNewPass.getUserId(), userNewPass.getLogin(), userNewPass.getPassword(), userNewPass.getEmail());
+                    System.out.println("Hasło zostało zmienione");
 
-                //todo zmiana hasła
+                    infoLabel.setTextFill(Color.GREEN);
+                    infoLabel.setText("Hasło zostało zmienione.");
+                }else{
+                    System.out.println("Hasło musi mieć min. 8 znaków i składać się z:\n" +
+                                            "przynajmniej jednej małej litery, dużej litery,\n" +
+                                            "liczby i znaku specjalnego");
+
+                    infoLabel.setTextFill(Color.RED);
+                    infoLabel.setText("Wymagania:\nMin. 8 znaków, znak specjalny, cyfra\noraz min. jedna mała i duża litera");
+                }
             }else{
                 System.out.println("Podane hasła nie sa takie same!");
-                //todo infolabel
+
+                infoLabel.setTextFill(Color.RED);
+                infoLabel.setText("Podane hasła nie sa takie same!");
             }
         }else{
             System.out.println("Proszę podać oba hasła.");
-            //todo infolabel
+
+            infoLabel.setTextFill(Color.RED);
+            infoLabel.setText("Proszę podać oba hasła.");
         }
     }
 

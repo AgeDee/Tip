@@ -17,6 +17,8 @@ import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 public class LoginController {
@@ -54,55 +56,62 @@ public class LoginController {
                     warningLabel.setTextFill(Color.RED);
                     warningLabel.setText("Login lub hasło są niepoprawne");
                 }
-                //else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(userPassword.getText())){
                 else if (userDAO.findByUserLogin(userLogin.getText()).getPassword().equals(passwordHash)) {
-                    //String user_ip = "";
-                    warningLabel.setText("");
-                    loggedUserName = userLogin.getText();
-
-                    try(final DatagramSocket socket = new DatagramSocket()){
-                        socket.connect(InetAddress.getByName("8.8.8.8"), 10002);
-                        user_ip = socket.getLocalAddress().getHostAddress();
-                    }catch(Exception ex){
-                        System.out.println("Exception occured in getting local ip address of user");
-                        System.out.println(ex);
+                    if(userDAO.findByUserLogin(userLogin.getText()).getUserIp() != null){
+                        warningLabel.setTextFill(Color.RED);
+                        warningLabel.setText("Użytkownik jest już zalogowany na innym urządzeniu");
                     }
+                    else {
+                        warningLabel.setText("");
+                        loggedUserName = userLogin.getText();
 
-                    userDAO.updateUserIpAddressById(userDAO.findByUserLogin(userLogin.getText()).getUserId(),user_ip);
-                    System.out.println("Login Success");
-                    CurrentUser.setUserLogin(userLogin.getText());
-                    Stage stage = (Stage) userLogin.getScene().getWindow();
-                    stage.close();
-
-                    Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-                    Scene scene = new Scene(root);
-                    scene.getStylesheets().add("sample/style.css");
-                    stage.setScene(scene);
-
-                    stage.setOnCloseRequest(event -> {
-                        userDAO.updateUserIpAddressById(userDAO.findByUserLogin(loggedUserName).getUserId(),null);
-
-                        CurrentUser.setUserLogin("");
-                        try {
-                            Parent rootForLoginParent = FXMLLoader.load(getClass().getResource("login.fxml"));
-                            Scene afterCloseScene = new Scene(rootForLoginParent);
-                            afterCloseScene.getStylesheets().add("sample/style.css");
-                            Stage onCloseStage = new Stage();
-                            onCloseStage.setScene(afterCloseScene);
-                            onCloseStage.show();
-
-                            MessageCommunicationClass.serverSocket.close();
-                        }catch(IOException exception){
-                            System.out.println("Exception in LoginController:OnCloseRequest");
-                            System.out.println(exception);
+                        try (final DatagramSocket socket = new DatagramSocket()) {
+                            socket.connect(InetAddress.getByName("8.8.8.8"), 10002);
+                            user_ip = socket.getLocalAddress().getHostAddress();
+                        } catch (Exception ex) {
+                            System.out.println("Exception occured in getting local ip address of user");
+                            System.out.println(ex);
                         }
 
-                    });
+                        userDAO.updateUserIpAddressById(userDAO.findByUserLogin(userLogin.getText()).getUserId(), user_ip);
+                        System.out.println("Login Success");
 
-                    stage.show();
+                        CurrentUser.setUserLogin(userLogin.getText());
+                        Stage stage = (Stage) userLogin.getScene().getWindow();
+                        stage.close();
+
+                        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+                        Scene scene = new Scene(root);
+                        scene.getStylesheets().add("sample/style.css");
+                        stage.setScene(scene);
+
+                        stage.setOnCloseRequest(event -> {
+                            userDAO.updateUserIpAddressById(userDAO.findByUserLogin(loggedUserName).getUserId(), null);
+
+                            CurrentUser.setUserLogin("");
+                            try {
+                                Parent rootForLoginParent = FXMLLoader.load(getClass().getResource("login.fxml"));
+                                Scene afterCloseScene = new Scene(rootForLoginParent);
+                                afterCloseScene.getStylesheets().add("sample/style.css");
+                                Stage onCloseStage = new Stage();
+                                onCloseStage.setScene(afterCloseScene);
+                                onCloseStage.show();
+
+                                MessageCommunicationClass.serverSocket.close();
+                            } catch (IOException exception) {
+                                System.out.println("Exception in LoginController:OnCloseRequest");
+                                System.out.println(exception);
+                            }
+
+                        });
+
+                        stage.show();
+                    }
 
                 } else {
                     System.out.println("Login Failed");
+                    warningLabel.setTextFill(Color.RED);
+                    warningLabel.setText("Login lub hasło są niepoprawne");
                 }
             } else {
                 System.out.println("Podaj hasło!");

@@ -3,7 +3,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="237.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TermsController">
    <children>
       <Text layoutX="39.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regulamin:" />
@@ -15,5 +14,6 @@
       <Text layoutX="39.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6th RULE: No shirts, no shoes." wrappingWidth="237.09375" />
       <Text layoutX="36.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 7th RULE: Fights will go on as long as they have to." wrappingWidth="368.09375" />
       <Text layoutX="39.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8th RULE: If this is your first night at FIGHT CLUB, you HAVE to fight." wrappingWidth="420.09375" />
+      <Text layoutX="39.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9th RULE: Administratorzy zastrzegają sobie prawo do usuwania kont,                które nie będą używane przez okres 2 miesięcy." wrappingWidth="420.09375" />
    </children>
 </AnchorPane>

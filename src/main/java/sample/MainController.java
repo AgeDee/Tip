@@ -15,6 +15,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -73,6 +75,10 @@ public class MainController {
     public static Stage callWindowStage;
     public static MessageCommunicationClientClass mainMessageClient;
     public static String recipientIp;
+
+    public static String dateTimeCallStart;
+
+
 
 
 
@@ -336,6 +342,16 @@ public class MainController {
                 controller.endCallButton.setOnAction(e -> {
                     stage.close();
                     controller.stopTimer();
+                    try {
+                        ConnectionsLogDAO connectionsLogDAO = new ConnectionsLogDAO();
+                        ConnectionLog connectionLog = new ConnectionLog(userId, userDAO.findByUserLogin(selectedUser).getUserId(), dateTimeCallStart,
+                                controller.countedTime);
+                        connectionsLogDAO.create(connectionLog);
+                    }catch(Exception ex){
+                        System.out.println("Exception in endCallButton action");
+                        System.out.println(ex);
+
+                    }
 
                     //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
                     voipConnection.stopServer();
@@ -349,6 +365,17 @@ public class MainController {
 
                     controller.stopTimer();
 
+                    try {
+                        ConnectionsLogDAO connectionsLogDAO = new ConnectionsLogDAO();
+                        ConnectionLog connectionLog = new ConnectionLog(userId, userDAO.findByUserLogin(selectedUser).getUserId(), dateTimeCallStart,
+                                controller.countedTime);
+                        connectionsLogDAO.create(connectionLog);
+                    }catch(Exception ex){
+                        System.out.println("Exception in endCallButton action");
+                        System.out.println(ex);
+
+                    }
+
                     //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
                     voipConnection.stopServer();
                     messageClient.sendMessage("DISCONNECT");
@@ -360,6 +387,7 @@ public class MainController {
 
 
                 callWindowStage = stage;
+                dateTimeCallStart = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
                 stage.show();
             });
 

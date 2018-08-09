@@ -14,8 +14,11 @@ import java.io.OutputStreamWriter;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import static sample.MainController.dateTimeCallStart;
 import static sample.MainController.mainMessageClient;
 import static sample.MainController.voipConnection;
 
@@ -53,6 +56,8 @@ class ServerMessageCommunicationClass extends Thread {
 
     //Loader okna rozmowy potrzebny do zatrzymania timera
     public static FXMLLoader loaderOfCallWindow;
+
+    public String startCallTime;
 
 
 
@@ -153,6 +158,17 @@ class ServerMessageCommunicationClass extends Thread {
                                             stageForCallWindow.close();
 
                                             controller.stopTimer();
+                                            try {
+                                                ConnectionsLogDAO connectionsLogDAO = new ConnectionsLogDAO();
+                                                ConnectionLog connectionLog = new ConnectionLog(userDAO.findByUserIpAddress(LoginController.user_ip).getUserId(),
+                                                        userDAO.findByUserIpAddress(MainController.recipientIp).getUserId(), startCallTime,
+                                                        controller.countedTime);
+                                                connectionsLogDAO.create(connectionLog);
+                                            }catch(Exception ex){
+                                                System.out.println("Exception in endCallButton action");
+                                                System.out.println(ex);
+
+                                            }
 
                                             //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
                                             MainController.voipConnection.stopServer();
@@ -167,6 +183,18 @@ class ServerMessageCommunicationClass extends Thread {
                                             System.out.println("Zakończenie połączenia");
 
                                             controller.stopTimer();
+                                            try {
+                                                ConnectionsLogDAO connectionsLogDAO = new ConnectionsLogDAO();
+                                                ConnectionLog connectionLog = new ConnectionLog(userDAO.findByUserIpAddress(LoginController.user_ip).getUserId(),
+                                                        userDAO.findByUserIpAddress(MainController.recipientIp).getUserId(), startCallTime,
+                                                        controller.countedTime);
+                                                connectionsLogDAO.create(connectionLog);
+                                            }catch(Exception ex){
+                                                System.out.println("Exception in closeRequest action");
+                                                System.out.println(ex);
+
+                                            }
+
 
                                             //Rozłączanie po kliknięciu krzyżyka oraz ustawienie flagi microphoneON na false wewnatrz funkcji
                                             MainController.voipConnection.stopServer();
@@ -179,6 +207,7 @@ class ServerMessageCommunicationClass extends Thread {
 
                                         });
                                         MainController.callWindowStage = stageForCallWindow;
+                                        startCallTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
                                         stageForCallWindow.show();
 
 
@@ -239,12 +268,25 @@ class ServerMessageCommunicationClass extends Thread {
                     break;
                     case "DISCONNECT":
                     {
-                        //clientCommunicationDataOutput.write("221 Thank you for using NiceFTP\n",0,"221 Thank you for using NiceFTP\n".length());
-                        //clientCommunicationDataOutput.flush();
+
                         Platform.runLater(() ->{
                             System.out.println("Komenda Rozłącz");
                             CallWindowController callWindowController = loaderOfCallWindow.getController();
                             callWindowController.stopTimer();
+
+                            try {
+                                ConnectionsLogDAO connectionsLogDAO = new ConnectionsLogDAO();
+                                ConnectionLog connectionLog = new ConnectionLog(userDAO.findByUserIpAddress(LoginController.user_ip).getUserId(),
+                                        userDAO.findByUserIpAddress(MainController.recipientIp).getUserId(), startCallTime,
+                                        callWindowController.countedTime);
+                                connectionsLogDAO.create(connectionLog);
+                            }catch(Exception ex){
+                                System.out.println("Exception in disconnect option addinglog action");
+                                System.out.println(ex);
+
+                            }
+
+
                             MainController.callWindowStage.close();
                             voipConnection.stopServer();
                             voipConnection.stopCapture();
@@ -257,6 +299,19 @@ class ServerMessageCommunicationClass extends Thread {
                         Platform.runLater(() ->{
                             CallWindowController callWindowController = loaderOfCallWindow.getController();
                             callWindowController.stopTimer();
+
+                            try {
+                                ConnectionsLogDAO connectionsLogDAO = new ConnectionsLogDAO();
+                                ConnectionLog connectionLog = new ConnectionLog(userDAO.findByUserIpAddress(LoginController.user_ip).getUserId(),
+                                        userDAO.findByUserIpAddress(MainController.recipientIp).getUserId(), MainController.dateTimeCallStart,
+                                        callWindowController.countedTime);
+                                connectionsLogDAO.create(connectionLog);
+                            }catch(Exception ex){
+                                System.out.println("Exception in disconnect option addinglog action");
+                                System.out.println(ex);
+
+                            }
+
                             MainController.callWindowStage.close();
                             voipConnection.stopServer();
                             voipConnection.stopCapture();
