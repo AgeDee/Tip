@@ -56,11 +56,17 @@ public class LogController {
     }
 
     public void loadList(){
-        List<ConnectionLog> connectionLogResultList = connectionsLogDAO.getAll();
+        List<ConnectionLog> connectionLogResultList1 = connectionsLogDAO.findByUser1Id(userDAO.findByUserLogin(CurrentUser.getUserLogin()).getUserId()); //wychodzące
+        List<ConnectionLog> connectionLogResultList2 = connectionsLogDAO.findByUser2Id(userDAO.findByUserLogin(CurrentUser.getUserLogin()).getUserId()); //przychodzące
 
-        for(ConnectionLog c : connectionLogResultList){
+        for(ConnectionLog c : connectionLogResultList1){
 
                 data.add(new logRow(userDAO.findByUserId(c.getUser2Id()).getLogin(), c.getDescription(), c.getDate()));
+        }
+
+        for(ConnectionLog c : connectionLogResultList2){
+
+            data.add(new logRow(userDAO.findByUserId(c.getUser1Id()).getLogin(), c.getDescription(), c.getDate()));
         }
 
         //todo tutaj pobieranie drugiego usera z wierszy gdzie znajduje się dany user (obojętnie czy jako user1 czy user2)
